@@ -49,7 +49,7 @@ body.addEventListener('click', function (event) {
 
 let resizeCheck = {}, windowSize;
 
-function resizeCheckFunc(size, minWidth, maxWidth) {
+/* function resizeCheckFunc(size, minWidth, maxWidth) {
   if (windowSize <= size && (resizeCheck[String(size)] == true || resizeCheck[String(size)] == undefined) && resizeCheck[String(size)] != false) {
     resizeCheck[String(size)] = false;
     maxWidth(); // < size
@@ -59,7 +59,7 @@ function resizeCheckFunc(size, minWidth, maxWidth) {
     resizeCheck[String(size)] = true;
     minWidth(); // > size
   }
-}
+} */
 
 function resize() {
 
