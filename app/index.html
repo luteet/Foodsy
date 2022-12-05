@@ -1,0 +1,101 @@
+@@include("html/_header.html")
+
+        <main class="main">
+            <section class="index">
+                <div class="index__bg"></div>
+                <div class="index__container container">
+                    <div class="index__intro">
+                        <div class="index__intro--col">
+                            <div class="index__intro--info">
+                                <h1 class="index__intro--title">
+                                    Couture party food delivered direct <br> to your door.
+                                </h1>
+                                <a href="#" class="index__intro--btn btn _bold">
+                                    <img src="img/icons/cutlery.svg" width="26" height="33" alt="">
+                                    <span>Order online</span>
+                                </a>
+                            </div>
+                            <div class="index__intro--info">
+                                <h1 class="index__intro--title">
+                                    Personally crafted events and dinner parties. 
+                                </h1>
+                                <a href="#" class="index__intro--btn btn _bold">
+                                    <img src="img/icons/waiter.svg" width="33" height="33" alt="">
+                                    <span>Find Out More</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="index__intro--col">
+                            <div class="index__intro--image">
+                                <div class="index__intro--image-item">
+                                    <div class="index__intro--image-item-body">
+                                        <picture>
+                                            <source srcset="img/index/image-2.webp" type="image/webp">
+                                            <img src="img/index/image-2.jpg" loading="lazy" alt="" width="278" height="278">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class="index__intro--image-item">
+                                    <div class="index__intro--image-item-body">
+                                        <picture>
+                                            <source srcset="img/index/image-1.webp" type="image/webp">
+                                            <img src="img/index/image-1.jpg" loading="lazy" alt="" width="435" height="435">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class="index__intro--image-item">
+                                    <div class="index__intro--image-item-body">
+                                        <picture>
+                                            <source srcset="img/index/image-3.webp" type="image/webp">
+                                            <img src="img/index/image-3.jpg" loading="lazy" alt="" width="278" height="278">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class="index__intro--image-item">
+                                    <div class="index__intro--image-item-body">
+                                        <picture>
+                                            <source srcset="img/index/image-4.webp" type="image/webp">
+                                            <img src="img/index/image-4.jpg" loading="lazy" alt="" width="278" height="278">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class="index__intro--image-item">
+                                    <div class="index__intro--image-item-body">
+                                        <picture>
+                                            <source srcset="img/index/image-5.webp" type="image/webp">
+                                            <img src="img/index/image-5.jpg" loading="lazy" alt="" width="278" height="278">
+                                        </picture>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="index__block">
+                        <ul class="index__list">
+                            @@loop("html/index/_card.html", [
+                                {
+                                    "image": '1',
+                                    "title": 'Party Food Delivered',
+                                    "text": '<p>Our party food is delivered direct to your door at a time convenient to you. All you need to do is serve!</p><p>Canapes, Buffet, Finger Food</p>',
+                                    "btn": 'Menu and Prices',
+                                },
+                                {
+                                    "image": '2',
+                                    "title": 'Christmas Menu',
+                                    "text": '<p>Christmas Menu</p><p>Sort out your festive season with our festive canapé, bowls or buffet selection.</p>',
+                                    "btn": 'View Menu',
+                                },
+                                {
+                                    "image": '3',
+                                    "title": 'Private Dinners',
+                                    "text": '<p>From our first wedding event in 2010 in the fields of Gloucestershire, we have catered a variety of venues and food styles. Get in touch to discuss your special day.</p>',
+                                    "btn": 'Write to Us',
+                                },
+                            ])
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+@@include("html/_footer.html")
