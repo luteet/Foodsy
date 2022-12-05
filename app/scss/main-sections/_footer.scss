@@ -1,15 +1,35 @@
 .footer {
+
     flex: 0 0 auto;
-    background: #ccc;
-    
+    padding: 17px 0;
+
+    background: #F8F8F8;
+
     // .footer__container
 
     &__container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+
+        padding: 0;
+
+        @include _768 {
+            padding: 0 var(--container-padding);
+        }
     }
 
     // .footer__logo
 
     &__logo {
+
+        padding-left: var(--container-padding);
+        
+        @include _768 {
+            order: 1;
+            padding-left: 0;
+        }
 
         // .footer__logo--img
 
@@ -17,24 +37,90 @@
         }
     }
 
-    // .footer__nav
+    // .footer__copy
 
-    &__nav {
+    &__copy {
+        font-weight: 500;
+        font-size: 0.75rem;
+        line-height: 100%;
 
-        // .footer__nav--list
+        text-align: center;
+
+        color: #6D6D6D;
+        border-top: 1px solid #EEEEEE;
+
+        padding-top: 15px;
+        margin-top: 10px;
+
+        flex: 1 1 100%;
+
+        @include _768 {
+            order: 2;
+            border-top: 0;
+            font-size: 0.875rem;
+            margin-top: 0;
+            flex: 0 1 auto;
+            padding-top: 0;
+        }
+    }
+
+    // .footer__social
+
+    &__social {
+
+        padding-right: var(--container-padding);
+
+        @include _768 {
+            order: 3;
+            padding-right: 0;
+        }
+
+        // .footer__social--list
 
         &--list {
+            display: flex;
+            flex-wrap: wrap;
+
+            margin: -5px;
         }
 
-        // .footer__nav--item
+        // .footer__social--item
 
         &--item {
+            padding: 5px;
         }
 
-        // .footer__nav--link
+        // .footer__social--link
 
         &--link {
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            width: 50px; height: 50px;
+            background: var(--white);
+            border-radius: 3px;
+
+            & svg {
+                width: 50%;
+                & path {
+                    transition: fill .2s ease-in-out;
+                }
+            }
+
+            transition: background .2s ease-in-out;
+
+            &:hover {
+                background: var(--accent);
+                & svg path {
+                    fill: var(--white);
+                }
+            }
+
+            &:active {
+                background: var(--accent-dark);
+            }
         }
     }
 }
-
