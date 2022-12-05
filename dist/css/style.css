@@ -980,10 +980,6 @@ h1 {
     max-width: 1470px
 }
 
-.section-padding {
-    padding: 75px 0
-}
-
 section {
     position: relative
 }
@@ -1755,10 +1751,6 @@ section {
         font-size: 1rem
     }
 
-    .section-padding {
-        padding: 100px 0
-    }
-
     .btn._bold {
         padding: 16px 20px;
         font-size: 1.125rem
@@ -1876,10 +1868,6 @@ section {
 }
 
 @media (min-width:992px) {
-    .section-padding {
-        padding: 150px 0
-    }
-
     .btn {
         font-size: 1.125rem;
         min-width: 185px
