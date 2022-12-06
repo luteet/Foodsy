@@ -1,0 +1,44 @@
+@@include("html/_header.html", {
+    "link": 'My orders'
+})
+
+        <main class="main">
+            <section class="my-orders">
+                <form action="#" class="my-orders__container container">
+                    <h2 class="my-orders__title section-title _decor-line">
+                        My orders
+                    </h2>
+                    <ul class="my-orders__list">
+                        @@loop("html/my-orders/_item.html", [
+                            {},
+                            {},
+
+                            {},
+                            {},
+
+                            {},
+                            {},
+                        ])
+                    </ul>
+                    <div class="my-orders__footer">
+                        <div class="my-orders__total">
+                            <div class="my-orders__total--body">
+                                <span>Total:</span>
+                                <strong>220 £</strong>
+                            </div>
+                        </div>
+                        <a href="#" class="my-orders__back" aria-label="Back to shopping">
+                            <svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.443528 5.07078L5.33867 0.17573C5.45189 0.0624223 5.60302 0 5.76418 0C5.92533 0 6.07647 0.0624223 6.18968 0.17573L6.55018 0.536134C6.78475 0.770977 6.78475 1.15267 6.55018 1.38715L2.43961 5.49772L6.55474 9.61285C6.66796 9.72616 6.73047 9.8772 6.73047 10.0383C6.73047 10.1995 6.66796 10.3506 6.55474 10.464L6.19425 10.8243C6.08094 10.9376 5.92989 11 5.76874 11C5.60758 11 5.45645 10.9376 5.34323 10.8243L0.443528 5.92475C0.330041 5.81108 0.267709 5.65932 0.268066 5.49799C0.267709 5.33603 0.330041 5.18436 0.443528 5.07078Z" fill="#373737"/>
+                            </svg>
+                            <span>Back to shopping</span>
+                        </a>
+                        <button class="my-orders__submit btn _center" type="submit">
+                            Checkout
+                        </button>
+                    </div>
+                </form>
+            </section>
+        </main>
+
+@@include("html/_footer.html")

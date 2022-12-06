@@ -52,6 +52,20 @@
     @include _992 {
         font-size: 3.4375rem;
     }
+
+    &._decor-line {
+        position: relative;
+        display: inline-block;
+        &::before {
+            content: '';
+            position: absolute;
+            right: calc(100% + 30px); top: 50%;
+            transform: translate(0,-50%);
+            width: 100vw; height: 1px;
+            background: linear-gradient(90deg, rgba(208, 158, 136, 0) -9.41%, #CB9E8B 104.95%);
+
+        }
+    }
 }
 
 .txt-center {

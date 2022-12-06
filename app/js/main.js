@@ -6,6 +6,15 @@ const body = document.querySelector('body'),
     header = document.querySelector('.header');
 
 
+/* let magicGrid = new MagicGrid({
+  container: ".my-orders__list", // Required. Can be a class, id, or an HTMLElement.
+  static: true,
+  items: 30,
+  gutter: 0, // Required for static content.
+  animate: true, // Optional.
+}); */
+
+
 body.addEventListener('click', function (event) {
 
     function $(elem) {
@@ -85,6 +94,25 @@ body.addEventListener('click', function (event) {
   }
 
   // =-=-=-=-=-=-=-=-=-=- </minus/plus length in basket> -=-=-=-=-=-=-=-=-=-=-
+
+
+
+  // =-=-=-=-=-=-=-=-=-=- <remove item from order list> -=-=-=-=-=-=-=-=-=-=-
+
+  const myOrdersItemRemove = $('.my-orders__item--remove');
+  if(myOrdersItemRemove) {
+
+    const item = myOrdersItemRemove.closest('.my-orders__item');
+
+    item.classList.add('_removing');
+    
+    setTimeout(() => {
+      item.remove();
+    },500)
+
+  }
+
+  // =-=-=-=-=-=-=-=-=-=- </remove item from order list> -=-=-=-=-=-=-=-=-=-=-
 
 })
 
@@ -189,6 +217,8 @@ let categorySlider = new Swiper('.category__slider', {
 }); 
 
 // =-=-=-=-=-=-=-=-=-=-=-=- </slider> -=-=-=-=-=-=-=-=-=-=-=-=
+
+
 
 
 /* 
