@@ -31,14 +31,19 @@ h1 {
 }
 
 .wrapper {
-    flex: 1 1 auto;
     min-height: 100%;
+
+    display: flex;
+    flex-direction: column;
 }
 
 .main {
     overflow: hidden;
 
     flex: 1 0 auto;
+
+    display: flex;
+    flex-direction: column;
 }
 
 .container {
@@ -100,6 +105,13 @@ section {
 
     &._center {
         text-align: center;
+        & span {
+            flex: 1 1 auto;
+        }
+    }
+
+    &._full {
+        width: 100%;
     }
 
     &._bold {
@@ -144,3 +156,80 @@ section {
         box-shadow: 0px 0 0px 0px #CA947E;
     }
 }
+
+.slider-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 50px; height: 50px;
+
+    border-radius: 50%;
+    border: 1px solid #E95F7E;
+    background: var(--accent);
+
+    &:hover {
+        background: var(--accent-light);
+    }
+
+    &:active {
+        background: var(--accent-dark);
+    }
+
+    box-shadow: 0px 15px 35px rgba(174, 64, 66, 0.25);
+
+    transition: background .2s ease-in-out, box-shadow .2s ease-in-out;
+
+    &.swiper-button-disabled {
+        opacity: 1;
+        background: var(--white);
+        box-shadow: none;
+
+        background: var(--white);
+        &::after {
+            color: var(--accent);
+        }
+    }
+
+    &::after {
+        font-size: 12px;
+        font-weight: 900;
+        color: var(--white);
+        
+        transition: color .2s ease-in-out;
+    }
+}
+
+.slider-pagination {
+    position: static;
+    transform: translate(0,0);
+
+    & .swiper-pagination-bullet {
+        width: 15px; height: 15px;
+
+        position: relative;
+        background: var(--white);
+        border: 1px solid var(--white);
+        opacity: 1;
+        &::before {
+            content: '';
+            position: absolute;
+            left: 50%; top: 50%;
+            width: 50%; height: 50%;
+            transform: translate(-50%,-50%);
+            background: var(--accent);
+            border-radius: 50%;
+            transition: opacity .2s ease-in-out;
+            opacity: 0;
+        }
+
+        &.swiper-pagination-bullet-active {
+            border-color: var(--accent);
+            &::before {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+

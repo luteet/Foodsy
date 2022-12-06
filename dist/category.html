@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <!-- <link rel="SHORTCUT ICON" href="img/logo.svg" type="image/svg"> -->
+</head>
+<body>
+
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container container">
+                <a href="#" class="header__logo">
+                    <img src="img/logo.svg" alt="" width="94" height="38" class="header__logo--img">
+                </a>
+                <nav class="header__nav">
+                    <div class="header__nav--body">
+                        <ul class="header__nav--list">
+                            <li class="header__nav--item">
+                                <a href="#" class="header__nav--link" aria-label="Delivered | Canapes">
+                                    <div class="header__nav--link-icon">
+                                        <img src="img/header/nav-icon-1.svg" width="20" height="20" alt="">
+                                    </div>
+                                    <span>Delivered | Canapes</span>
+                                </a>
+                            </li>
+                            <li class="header__nav--item">
+                                <a href="#" class="header__nav--link" aria-label="Delivered | Buffet">
+                                    <div class="header__nav--link-icon">
+                                        <img src="img/header/nav-icon-2.svg" width="20" height="20" alt="">
+                                    </div>
+                                    <span>Delivered | Buffet</span>
+                                </a>
+                            </li>
+                            <li class="header__nav--item">
+                                <a href="#" class="header__nav--link" aria-label="Delivered | Dinner Party">
+                                    <div class="header__nav--link-icon">
+                                        <img src="img/header/nav-icon-3.svg" width="20" height="20" alt="">
+                                    </div>
+                                    <span>Delivered | Dinner Party</span>
+                                </a>
+                            </li>
+                            <li class="header__nav--item">
+                                <a href="#" class="header__nav--link" aria-label="Delivered | Kids Party">
+                                    <div class="header__nav--link-icon">
+                                        <img src="img/header/nav-icon-4.svg" width="20" height="20" alt="">
+                                    </div>
+                                    <span>Delivered | Kids Party</span>
+                                </a>
+                            </li>
+                            <li class="header__nav--item">
+                                <a href="#" class="header__nav--link" aria-label="Catering">
+                                    <div class="header__nav--link-icon">
+                                        <img src="img/header/nav-icon-5.svg" width="20" height="20" alt="">
+                                    </div>
+                                    <span>Catering</span>
+                                </a>
+                            </li>
+                            <li class="header__nav--item header__nav--select">
+                                <button class="header__nav--select-target" aria-label="About">
+                                    <div class="header__nav--select-icon">
+                                        <img src="img/header/nav-icon-6.svg" width="20" height="20" alt="">
+                                    </div>
+                                    <span>About</span>
+                                </button>
+                                <div class="header__nav--select-block">
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                Contact us
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Testimonials
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="header__nav--basket header__basket">
+                            <div class="header__basket--text">
+                                Доставка по Лондону
+                            </div>
+                            <a href="#" class="header__basket--btn" title="Basket" data-length="0">
+                                <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M22 7.24999H18.2642L14.3395 0.708679C14.1448 0.383742 13.7225 0.277652 13.3962 0.47303C13.0706 0.668409 12.9652 1.09069 13.1606 1.41632L16.6608 7.24999H5.33928L8.83947 1.41627C9.03485 1.09064 8.92945 0.668362 8.60382 0.472984C8.27685 0.277606 7.85592 0.383696 7.66054 0.708632L3.7358 7.24994H0V8.62495H1.49216L3.23876 17.9418C3.42137 18.9173 4.27402 19.625 5.26638 19.625H16.7337C17.726 19.625 18.5786 18.9173 18.7606 17.9425L20.5078 8.62495H22C22 8.62495 22 7.24999 22 7.24999V7.24999ZM17.409 17.6894C17.3486 18.0143 17.0646 18.25 16.7336 18.25H5.26638C4.93538 18.25 4.6514 18.0144 4.5903 17.6887L2.89068 8.62495H19.1094L17.409 17.6894V17.6894Z" fill="white"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+                <button class="header__burger" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <div class="header__page-address">
+                <div class="header__container container">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <svg width="4" height="6" viewBox="0 0 4 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 5L3 3L1 1" stroke="#6A6565" stroke-linecap="round"/>
+                            </svg>
+                        </li>
+                        <li>
+                            <a>
+                                Delivered Canapes
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+            <section class="category">
+                <div class="category__bg"></div>
+                <div class="category__intro">
+                    <div class="category__intro--bg"></div>
+                    <div class="category__intro--container container _large">
+                        <h2 class="category__slider--title section-title">
+                            Delivered Canapes
+                        </h2>
+                        <div class="category__slider swiper">
+                            <ul class="category__slider--list swiper-wrapper">
+                                <li class="category__slider--item category__slide swiper-slide" style="display: none;">
+                                    <div class="category__slide--body">
+                                        <div class="category__slide--image">
+                                            <picture>
+                                                <source srcset="img/category/intro/image-1.webp" type="image/webp">
+                                                <img src="img/category/intro/image-1.jpg" loading="lazy" alt="" width="400" height="500" class="category__slide--img">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="category__slider--item category__slide swiper-slide">
+    <div class="category__slide--body">
+        <div class="category__slide--image">
+            <picture>
+                <source srcset="img/category/intro/image-1.webp" type="image/webp">
+                <img src="img/category/intro/image-1.jpg" loading="lazy" alt="" width="400" height="500" class="category__slide--img">
+            </picture>
+        </div>
+    </div>
+</li><li class="category__slider--item category__slide swiper-slide">
+    <div class="category__slide--body">
+        <div class="category__slide--image">
+            <picture>
+                <source srcset="img/category/intro/image-2.webp" type="image/webp">
+                <img src="img/category/intro/image-2.jpg" loading="lazy" alt="" width="400" height="500" class="category__slide--img">
+            </picture>
+        </div>
+    </div>
+</li><li class="category__slider--item category__slide swiper-slide">
+    <div class="category__slide--body">
+        <div class="category__slide--image">
+            <picture>
+                <source srcset="img/category/intro/image-3.webp" type="image/webp">
+                <img src="img/category/intro/image-3.jpg" loading="lazy" alt="" width="400" height="500" class="category__slide--img">
+            </picture>
+        </div>
+    </div>
+</li><li class="category__slider--item category__slide swiper-slide">
+    <div class="category__slide--body">
+        <div class="category__slide--image">
+            <picture>
+                <source srcset="img/category/intro/image-4.webp" type="image/webp">
+                <img src="img/category/intro/image-4.jpg" loading="lazy" alt="" width="400" height="500" class="category__slide--img">
+            </picture>
+        </div>
+    </div>
+</li><li class="category__slider--item category__slide swiper-slide">
+    <div class="category__slide--body">
+        <div class="category__slide--image">
+            <picture>
+                <source srcset="img/category/intro/image-1.webp" type="image/webp">
+                <img src="img/category/intro/image-1.jpg" loading="lazy" alt="" width="400" height="500" class="category__slide--img">
+            </picture>
+        </div>
+    </div>
+</li><li class="category__slider--item category__slide swiper-slide">
+    <div class="category__slide--body">
+        <div class="category__slide--image">
+            <picture>
+                <source srcset="img/category/intro/image-2.webp" type="image/webp">
+                <img src="img/category/intro/image-2.jpg" loading="lazy" alt="" width="400" height="500" class="category__slide--img">
+            </picture>
+        </div>
+    </div>
+</li>
+                            </ul>
+                            <div class="category__slider--nav">
+                                <button class="category__slider--arrow slider-arrow swiper-button-prev"></button>
+                                <button class="category__slider--arrow slider-arrow swiper-button-next"></button>
+                                <div class="category__slider--pagination slider-pagination swiper-pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="category__container container">
+                    <div class="category__base-info">
+                        <ul class="category__base-info--list">
+                            <li class="category__base-info--item">
+                                <div class="category__base-info--item-body">
+                                    <div class="category__base-info--icon">
+                                        <img src="img/icons/fork.svg" width="16" height="16" alt="">
+                                    </div>
+                                    <span>Order 72 hours in advance</span>
+                                </div>
+                            </li>
+                            <li class="category__base-info--item">
+                                <div class="category__base-info--item-body">
+                                    <div class="category__base-info--icon">
+                                        <img src="img/icons/fork.svg" width="16" height="16" alt="">
+                                    </div>
+                                    <span>Minimum order from 250£</span>
+                                </div>
+                            </li>
+                            <li class="category__base-info--item _large">
+                                <div class="category__base-info--item-body">
+                                    <div class="category__base-info--icon">
+                                        <img src="img/icons/fork.svg" width="16" height="16" alt="">
+                                    </div>
+                                    <span>Hot canapes will require preheating in the oven</span>
+                                </div>
+                            </li>
+                            <li class="category__base-info--item _large">
+                                <div class="category__base-info--item-body">
+                                    <div class="category__base-info--icon">
+                                        <img src="img/icons/fork.svg" width="16" height="16" alt="">
+                                    </div>
+                                    <span>Delivery is extra (£40-65). We deliver in and around London.</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="category__block">
+                        <menu class="category__menu">
+                            <form action="#" class="category__menu--body">
+                                <div class="category__menu--row">
+                                    <div class="category__menu--col">
+                                        <fieldset class="category__menu--fieldset">
+                                            <legend class="category__menu--legend">
+                                                Meat
+                                            </legend>
+                                            <ul class="category__menu--list">
+                                                <li>
+                                                    <label class="category__menu--label">
+                                                        <input type="checkbox" checked name="dish-1-1" class="category__menu--input">
+                                                        <span class="category__menu--checkbox"></span>
+                                                        <span class="category__menu--name">
+                                                            <span>Skewers of marinated figs
+                                                                with prosciutto, mozzarella & basil</span>
+                                                        </span>
+                                                        <b class="category__menu--price">
+                                                            2£
+                                                        </b>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label class="category__menu--label">
+                                                        <input type="checkbox" name="dish-1-2" class="category__menu--input">
+                                                        <span class="category__menu--checkbox"></span>
+                                                        <span class="category__menu--name">
+                                                            Mini Peking duck pancake rolls with plum sauce
+                                                        </span>
+                                                        <b class="category__menu--price">
+                                                            2£
+                                                        </b>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label class="category__menu--label">
+                                                        <input type="checkbox" name="dish-1-3" class="category__menu--input">
+                                                        <span class="category__menu--checkbox"></span>
+                                                        <span class="category__menu--name">
+                                                            Mini beef Yorkshire pudding with rare beef & horseradish sauce
+                                                        </span>
+                                                        <b class="category__menu--price">
+                                                            2£
+                                                        </b>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label class="category__menu--label">
+                                                        <input type="checkbox" name="dish-1-4" class="category__menu--input">
+                                                        <span class="category__menu--checkbox"></span>
+                                                        <span class="category__menu--name">
+                                                            Mini Peking duck pancake rolls with plum sauce
+                                                        </span>
+                                                        <b class="category__menu--price">
+                                                            2£
+                                                        </b>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label class="category__menu--label">
+                                                        <input type="checkbox" name="dish-1-5" class="category__menu--input">
+                                                        <span class="category__menu--checkbox"></span>
+                                                        <span class="category__menu--name">
+                                                            Prosciutto cups with quail egg and basil sauce
+                                                        </span>
+                                                        <b class="category__menu--price">
+                                                            2£
+                                                        </b>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label class="category__menu--label">
+                                                        <input type="checkbox" name="dish-1-6" class="category__menu--input">
+                                                        <span class="category__menu--checkbox"></span>
+                                                        <span class="category__menu--name">
+                                                            Teriyaki chicken sesame and avocado canapes
+                                                        </span>
+                                                        <b class="category__menu--price">
+                                                            2£
+                                                        </b>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label class="category__menu--label">
+                                                        <input type="checkbox" name="dish-1-7" class="category__menu--input">
+                                                        <span class="category__menu--checkbox"></span>
+                                                        <span class="category__menu--name">
+                                                            Chicken salad canape pnm endive spoons
+                                                        </span>
+                                                        <b class="category__menu--price">
+                                                            2£
+                                                        </b>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </fieldset>
+                                        <fieldset class="category__menu--fieldset">
+                                            <legend class="category__menu--legend">
+                                                Hot Options
+                                            </legend>
+                                            <ul class="category__menu--list">
+                                                <li>
+                                                    <label class="category__menu--label">
+                                                        <input type="checkbox" name="dish-2-1" checked class="category__menu--input">
+                                                        <span class="category__menu--checkbox"></span>
+                                                        <span class="category__menu--name">
+                                                            Baby blue cheese cheeseburgers
+                                                        </span>
+                                                        <b class="category__menu--price">
+                                                            2£
+                                                        </b>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label class="category__menu--label">
+                                                        <input type="checkbox" name="dish-2-1" class="category__menu--input">
+                                                        <span class="category__menu--checkbox"></span>
+                                                        <span class="category__menu--name">
+                                                            Mini beef wellingtons with red wine dipping sauce
+                                                        </span>
+                                                        <b class="category__menu--price">
+                                                            2£
+                                                        </b>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label class="category__menu--label">
+                                                        <input type="checkbox" name="dish-2-3" class="category__menu--input">
+                                                        <span class="category__menu--checkbox"></span>
+                                                        <span class="category__menu--name">
+                                                            Satay chicken skewers with peanut dipping sauce
+                                                        </span>
+                                                        <b class="category__menu--price">
+                                                            2£
+                                                        </b>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label class="category__menu--label">
+                                                        <input type="checkbox" name="dish-2-4" class="category__menu--input">
+                                                        <span class="category__menu--checkbox"></span>
+                                                        <span class="category__menu--name">
+                                                            Lamb kofta skewers with mint yoghurt
+                                                        </span>
+                                                        <b class="category__menu--price">
+                                                            2£
+                                                        </b>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </fieldset>
+                                    </div>
+                                    <div class="category__menu--col">
+                                        <div class="category__menu--gallery category__gallery _type-1">
+                                            <div class="category__gallery--item">
+                                                <div class="category__gallery--item-body">
+                                                    <picture>
+                                                        <source srcset="img/category/menu/image-1.webp" type="image/webp">
+                                                        <img src="img/category/menu/image-1.jpg" loading="lazy" alt="" width="350" height="254" class="category__gallery--img">
+                                                    </picture>
+                                                </div>
+                                            </div>
+                                            <div class="category__gallery--item">
+                                                <div class="category__gallery--item-body">
+                                                    <picture>
+                                                        <source srcset="img/category/menu/image-1.webp" type="image/webp">
+                                                        <img src="img/category/menu/image-1.jpg" loading="lazy" alt="" width="350" height="254" class="category__gallery--img">
+                                                    </picture>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="category__menu--row">
+                                    <div class="category__menu--col">
+                                        <div class="category__menu--gallery category__gallery _type-2">
+                                            <div class="category__gallery--item">
+                                                <div class="category__gallery--item-body">
+                                                    <picture>
+                                                        <source srcset="img/category/menu/image-3.webp" type="image/webp">
+                                                        <img src="img/category/menu/image-3.jpg" loading="lazy" alt="" width="350" height="254" class="category__gallery--img">
+                                                    </picture>
+                                                </div>
+                                            </div>
+                                            <div class="category__gallery--item">
+                                                <div class="category__gallery--item-body">
+                                                    <picture>
+                                                        <source srcset="img/category/menu/image-4.webp" type="image/webp">
+                                                        <img src="img/category/menu/image-4.jpg" loading="lazy" alt="" width="350" height="254" class="category__gallery--img">
+                                                    </picture>
+                                                </div>
+                                            </div>
+                                            <div class="category__gallery--item">
+                                                <div class="category__gallery--item-body">
+                                                    <picture>
+                                                        <source srcset="img/category/menu/image-5.webp" type="image/webp">
+                                                        <img src="img/category/menu/image-5.jpg" loading="lazy" alt="" width="350" height="254" class="category__gallery--img">
+                                                    </picture>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="category__menu--col">
+                                        <fieldset class="category__menu--fieldset">
+                                            <legend class="category__menu--legend">
+                                                Vegetarian
+                                            </legend>
+                                            <ul class="category__menu--list">
+                                                <li>
+                                                    <label class="category__menu--label">
+                                                        <input type="checkbox" checked name="dish-3-1" class="category__menu--input">
+                                                        <span class="category__menu--checkbox"></span>
+                                                        <span class="category__menu--name">
+                                                            <span>Olive, feta and herb muffins mini muffins</span>
+                                                        </span>
+                                                        <b class="category__menu--price">
+                                                            2£
+                                                        </b>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label class="category__menu--label">
+                                                        <input type="checkbox" name="dish-3-2" class="category__menu--input">
+                                                        <span class="category__menu--checkbox"></span>
+                                                        <span class="category__menu--name">
+                                                            Goats cheese wrapped in walnuts w/ slow roast tomatoes & olive toast
+                                                        </span>
+                                                        <b class="category__menu--price">
+                                                            2£
+                                                        </b>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label class="category__menu--label">
+                                                        <input type="checkbox" name="dish-3-3" class="category__menu--input">
+                                                        <span class="category__menu--checkbox"></span>
+                                                        <span class="category__menu--name">
+                                                            Grilled courgette rolls with rocket & goats cheese
+                                                        </span>
+                                                        <b class="category__menu--price">
+                                                            2£
+                                                        </b>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label class="category__menu--label">
+                                                        <input type="checkbox" name="dish-3-4" class="category__menu--input">
+                                                        <span class="category__menu--checkbox"></span>
+                                                        <span class="category__menu--name">
+                                                            Tartlets with pesto feta filling & cherry tomatoes 
+                                                        </span>
+                                                        <b class="category__menu--price">
+                                                            2£
+                                                        </b>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label class="category__menu--label">
+                                                        <input type="checkbox" name="dish-3-5" class="category__menu--input">
+                                                        <span class="category__menu--checkbox"></span>
+                                                        <span class="category__menu--name">
+                                                            Blue cheese mousse on parmesan shortbread with pear slices
+                                                        </span>
+                                                        <b class="category__menu--price">
+                                                            2£
+                                                        </b>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label class="category__menu--label">
+                                                        <input type="checkbox" name="dish-3-6" class="category__menu--input">
+                                                        <span class="category__menu--checkbox"></span>
+                                                        <span class="category__menu--name">
+                                                            Spiced cauliflower fritters with lime yoghu
+                                                        </span>
+                                                        <b class="category__menu--price">
+                                                            2£
+                                                        </b>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </fieldset>
+                                        <fieldset class="category__menu--fieldset">
+                                            <legend class="category__menu--legend">
+                                                Hot Options
+                                            </legend>
+                                            <ul class="category__menu--list">
+                                                <li>
+                                                    <label class="category__menu--label">
+                                                        <input type="checkbox" checked name="dish-4-1" class="category__menu--input">
+                                                        <span class="category__menu--checkbox"></span>
+                                                        <span class="category__menu--name">
+                                                            Halloumi skewers with parsley & lemon salsa
+                                                        </span>
+                                                        <b class="category__menu--price">
+                                                            2£
+                                                        </b>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label class="category__menu--label">
+                                                        <input type="checkbox" name="dish-4-2" class="category__menu--input">
+                                                        <span class="category__menu--checkbox"></span>
+                                                        <span class="category__menu--name">
+                                                            Polenta squares with wild mushroom, red onion marmalade & parmesa  shavings
+                                                        </span>
+                                                        <b class="category__menu--price">
+                                                            2£
+                                                        </b>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label class="category__menu--label">
+                                                        <input type="checkbox" name="dish-4-3" class="category__menu--input">
+                                                        <span class="category__menu--checkbox"></span>
+                                                        <span class="category__menu--name">
+                                                            Mushroom, ricotta & spinach tartlets
+                                                        </span>
+                                                        <b class="category__menu--price">
+                                                            2£
+                                                        </b>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label class="category__menu--label">
+                                                        <input type="checkbox" name="dish-4-4" class="category__menu--input">
+                                                        <span class="category__menu--checkbox"></span>
+                                                        <span class="category__menu--name">
+                                                            Fig, goats cheese & pine nuts tartlets
+                                                        </span>
+                                                        <b class="category__menu--price">
+                                                            2£
+                                                        </b>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </fieldset>
+                                    </div>
+                                </div>
+                                <div class="category__menu--row">
+                                    <div class="category__menu--col">
+                                        <fieldset class="category__menu--fieldset">
+                                            <legend class="category__menu--legend">
+                                                Fish
+                                            </legend>
+                                            <ul class="category__menu--list">
+                                                <li>
+                                                    <label class="category__menu--label">
+                                                        <input type="checkbox" checked name="dish-5-1" class="category__menu--input">
+                                                        <span class="category__menu--checkbox"></span>
+                                                        <span class="category__menu--name">
+                                                            Skewers of tiger prawn, prosciutto, basil & slow roasted cherry tomato
+                                                        </span>
+                                                        <b class="category__menu--price">
+                                                            2£
+                                                        </b>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label class="category__menu--label">
+                                                        <input type="checkbox" name="dish-5-2" class="category__menu--input">
+                                                        <span class="category__menu--checkbox"></span>
+                                                        <span class="category__menu--name">
+                                                            Chilli tiger prawn with mango salsa
+                                                        </span>
+                                                        <b class="category__menu--price">
+                                                            2£
+                                                        </b>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label class="category__menu--label">
+                                                        <input type="checkbox" name="dish-5-3" class="category__menu--input">
+                                                        <span class="category__menu--checkbox"></span>
+                                                        <span class="category__menu--name">
+                                                            Seared tuna rounds with wasabi mayo and seaweed crisp
+                                                        </span>
+                                                        <b class="category__menu--price">
+                                                            2£
+                                                        </b>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label class="category__menu--label">
+                                                        <input type="checkbox" name="dish-5-4" class="category__menu--input">
+                                                        <span class="category__menu--checkbox"></span>
+                                                        <span class="category__menu--name">
+                                                            Smoked salmon & soft boiled quail's egg tartlet with hollandaise sauce
+                                                        </span>
+                                                        <b class="category__menu--price">
+                                                            2£
+                                                        </b>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label class="category__menu--label">
+                                                        <input type="checkbox" name="dish-5-5" class="category__menu--input">
+                                                        <span class="category__menu--checkbox"></span>
+                                                        <span class="category__menu--name">
+                                                            Smoked salmon tartar on crispy tempura skins
+                                                        </span>
+                                                        <b class="category__menu--price">
+                                                            2£
+                                                        </b>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label class="category__menu--label">
+                                                        <input type="checkbox" name="dish-5-6" class="category__menu--input">
+                                                        <span class="category__menu--checkbox"></span>
+                                                        <span class="category__menu--name">
+                                                            Salmon and crème fraîche shots topped with watercress purée 
+                                                        </span>
+                                                        <b class="category__menu--price">
+                                                            2£
+                                                        </b>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </fieldset>
+                                        <fieldset class="category__menu--fieldset">
+                                            <legend class="category__menu--legend">
+                                                Hot Options
+                                            </legend>
+                                            <ul class="category__menu--list">
+                                                <li>
+                                                    <label class="category__menu--label">
+                                                        <input type="checkbox" checked name="dish-6-1" class="category__menu--input">
+                                                        <span class="category__menu--checkbox"></span>
+                                                        <span class="category__menu--name">
+                                                            Mini salmon fishcakes with tartar sauce
+                                                        </span>
+                                                        <b class="category__menu--price">
+                                                            2£
+                                                        </b>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label class="category__menu--label">
+                                                        <input type="checkbox" name="dish-6-2" class="category__menu--input">
+                                                        <span class="category__menu--checkbox"></span>
+                                                        <span class="category__menu--name">
+                                                            Thai fishcakes with chilli dipping sauce
+                                                        </span>
+                                                        <b class="category__menu--price">
+                                                            2£
+                                                        </b>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </fieldset>
+                                    </div>
+                                    <div class="category__menu--col">
+                                        <fieldset class="category__menu--fieldset">
+                                            <legend class="category__menu--legend">
+                                                Sweet
+                                            </legend>
+                                            <ul class="category__menu--list">
+                                                <li>
+                                                    <label class="category__menu--label">
+                                                        <input type="checkbox" checked name="dish-7-1" class="category__menu--input">
+                                                        <span class="category__menu--checkbox"></span>
+                                                        <span class="category__menu--name">
+                                                            Mini macaroons in assorted flavours
+                                                        </span>
+                                                        <b class="category__menu--price">
+                                                            2£
+                                                        </b>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label class="category__menu--label">
+                                                        <input type="checkbox" name="dish-7-2" class="category__menu--input">
+                                                        <span class="category__menu--checkbox"></span>
+                                                        <span class="category__menu--name">
+                                                            White chocolate panacotta with raspberries
+                                                        </span>
+                                                        <b class="category__menu--price">
+                                                            2£
+                                                        </b>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label class="category__menu--label">
+                                                        <input type="checkbox" name="dish-7-3" class="category__menu--input">
+                                                        <span class="category__menu--checkbox"></span>
+                                                        <span class="category__menu--name">
+                                                            Mascarpone vanilla cream & berries tartlets
+                                                        </span>
+                                                        <b class="category__menu--price">
+                                                            2£
+                                                        </b>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label class="category__menu--label">
+                                                        <input type="checkbox" name="dish-7-4" class="category__menu--input">
+                                                        <span class="category__menu--checkbox"></span>
+                                                        <span class="category__menu--name">
+                                                            Dark chocolate and orange mini brownies 
+                                                        </span>
+                                                        <b class="category__menu--price">
+                                                            2£
+                                                        </b>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label class="category__menu--label">
+                                                        <input type="checkbox" name="dish-7-5" class="category__menu--input">
+                                                        <span class="category__menu--checkbox"></span>
+                                                        <span class="category__menu--name">
+                                                            Dark chocolate cups filled with a creamy raspberry fool & pistachios dust
+                                                        </span>
+                                                        <b class="category__menu--price">
+                                                            2£
+                                                        </b>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </fieldset>
+                                    </div>
+                                </div>
+                            </form>
+                        </menu>
+                        <aside class="category__basket">
+                            <button class="category__basket--open open-basket-popup btn _bold _center _full" aria-label="Basket" type="button">
+                                <img src="img/icons/basket.svg" width="22" height="22" alt="">
+                                <span>Basket</span>
+                            </button>
+                            <div class="category__basket--popup">
+                                <button class="category__basket--close-btn close-basket-popup" title="Close" type="button">
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.586047 11.9998C0.470144 11.9999 0.356837 11.9655 0.26046 11.9011C0.164083 11.8367 0.0889654 11.7452 0.0446082 11.6381C0.000250996 11.5311 -0.0113527 11.4132 0.0112649 11.2996C0.0338824 11.1859 0.0897052 11.0815 0.171672 10.9995L10.9998 0.171396C11.1097 0.0614965 11.2588 -0.000244141 11.4142 -0.000244141C11.5696 -0.000244141 11.7186 0.0614965 11.8285 0.171396C11.9384 0.281295 12.0002 0.43035 12.0002 0.585771C12.0002 0.741191 11.9384 0.890247 11.8285 1.00015L1.00042 11.8283C0.946056 11.8827 0.881462 11.926 0.810351 11.9554C0.739239 11.9848 0.663012 11.9999 0.586047 11.9998Z" fill="#696969"/>
+                                        <path d="M11.4141 11.9998C11.3372 11.9999 11.2609 11.9848 11.1898 11.9554C11.1187 11.926 11.0541 11.8827 10.9998 11.8283L0.17164 1.00015C0.0617407 0.890247 0 0.741191 0 0.585771C0 0.43035 0.0617407 0.281295 0.17164 0.171396C0.281539 0.0614965 0.430594 -0.000244141 0.586015 -0.000244141C0.741436 -0.000244141 0.890491 0.0614965 1.00039 0.171396L11.8285 10.9995C11.9105 11.0815 11.9663 11.1859 11.9889 11.2996C12.0115 11.4132 11.9999 11.5311 11.9556 11.6381C11.9112 11.7452 11.8361 11.8367 11.7397 11.9011C11.6433 11.9655 11.53 11.9999 11.4141 11.9998Z" fill="#696969"/>
+                                    </svg>
+                                </button>
+                                <div class="category__basket--body">
+                                    <h3 class="category__basket--title">
+                                        Basket
+                                    </h3>
+                                    <div class="category__basket--terms">
+                                        <ul>
+                                            <li>Minimum order from 250£</li>
+                                            <li>Minimum number of canapes 1 flavor 10 pcs</li>
+                                        </ul>
+                                    </div>
+                                    <form action="#" class="category__basket--form">
+                                        <h4 class="category__basket--min-title">
+                                            Canapes you have chosen:
+                                        </h4>
+                                        <ul class="category__basket--list">
+                                            <li class="category__basket--item">
+                                                <span class="category__basket--name">
+                                                    Skewers of marinated figs with prosciutto, mozzarella & basil
+                                                </span>
+                                                <span class="category__basket--tag">Meat</span>
+                                                <div class="category__basket--length">
+                                                    <button class="dish-minus" type="button" title="Minus"></button>
+                                                    <input type="number" class="dish-length" name="dish-length-1" value="10" min="10">
+                                                    <button class="dish-plus" type="button" title="Plus"></button>
+                                                </div>
+                                            </li>
+                                            <li class="category__basket--item">
+                                                <span class="category__basket--name">
+                                                    Skewers of marinated figs with prosciutto, mozzarella & basil
+                                                </span>
+                                                <span class="category__basket--tag">Meat</span>
+                                                <div class="category__basket--length">
+                                                    <button class="dish-minus" type="button" title="Minus"></button>
+                                                    <input type="number" class="dish-length" name="dish-length-2" value="10" min="10">
+                                                    <button class="dish-plus" type="button" title="Plus"></button>
+                                                </div>
+                                            </li>
+                                            <li class="category__basket--item">
+                                                <span class="category__basket--name">
+                                                    Skewers of marinated figs with prosciutto, mozzarella & basil
+                                                </span>
+                                                <span class="category__basket--tag">Meat</span>
+                                                <div class="category__basket--length">
+                                                    <button class="dish-minus" type="button" title="Minus"></button>
+                                                    <input type="number" class="dish-length" name="dish-length-3" value="10" min="10">
+                                                    <button class="dish-plus" type="button" title="Plus"></button>
+                                                </div>
+                                            </li>
+                                            <li class="category__basket--item">
+                                                <span class="category__basket--name">
+                                                    Skewers of marinated figs with prosciutto, mozzarella & basil
+                                                </span>
+                                                <span class="category__basket--tag">Meat</span>
+                                                <div class="category__basket--length">
+                                                    <button class="dish-minus" type="button" title="Minus"></button>
+                                                    <input type="number" class="dish-length" name="dish-length-4" value="10" min="10">
+                                                    <button class="dish-plus" type="button" title="Plus"></button>
+                                                </div>
+                                            </li>
+                                            <li class="category__basket--item">
+                                                <span class="category__basket--name">
+                                                    Skewers of marinated figs with prosciutto, mozzarella & basil
+                                                </span>
+                                                <span class="category__basket--tag">Meat</span>
+                                                <div class="category__basket--length">
+                                                    <button class="dish-minus" type="button" title="Minus"></button>
+                                                    <input type="number" class="dish-length" name="dish-length-5" value="10" min="10">
+                                                    <button class="dish-plus" type="button" title="Plus"></button>
+                                                </div>
+                                            </li>
+                                            <li class="category__basket--item">
+                                                <span class="category__basket--name">
+                                                    Skewers of marinated figs with prosciutto, mozzarella & basil
+                                                </span>
+                                                <span class="category__basket--tag">Meat</span>
+                                                <div class="category__basket--length">
+                                                    <button class="dish-minus" type="button" title="Minus"></button>
+                                                    <input type="number" class="dish-length" name="dish-length-6" value="10" min="10">
+                                                    <button class="dish-plus" type="button" title="Plus"></button>
+                                                </div>
+                                            </li>
+                                            <li class="category__basket--item">
+                                                <span class="category__basket--name">
+                                                    Skewers of marinated figs with prosciutto, mozzarella & basil
+                                                </span>
+                                                <span class="category__basket--tag">Meat</span>
+                                                <div class="category__basket--length">
+                                                    <button class="dish-minus" type="button" title="Minus"></button>
+                                                    <input type="number" class="dish-length" name="dish-length-7" value="10" min="10">
+                                                    <button class="dish-plus" type="button" title="Plus"></button>
+                                                </div>
+                                            </li>
+                                            <li class="category__basket--item">
+                                                <span class="category__basket--name">
+                                                    Skewers of marinated figs with prosciutto, mozzarella & basil
+                                                </span>
+                                                <span class="category__basket--tag">Meat</span>
+                                                <div class="category__basket--length">
+                                                    <button class="dish-minus" type="button" title="Minus"></button>
+                                                    <input type="number" class="dish-length" name="dish-length-8" value="10" min="10">
+                                                    <button class="dish-plus" type="button" title="Plus"></button>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <b class="category__basket--note">
+                                            *The maximum number of verified dishes that you can order is 8.
+                                        </b>
+                                        <div class="category__basket--footer">
+                                            <div class="category__basket--total">
+                                                <span>Total:</span>
+                                                <strong>220 £</strong>
+                                            </div>
+                                            <b class="category__basket--note">
+                                                Minimum order from 250 pounds
+                                            </b>
+                                            <span class="category__basket--alt-note">
+                                                *You can choose additional flavors or add the number of already selected canapes
+                                            </span>
+                                            <div class="category__basket--add-note">
+                                                <svg width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M14.8763 5.49345L12.3553 2.88869C12.2726 2.80314 12.1586 2.75486 12.0396 2.75486H10.4286V0.858887C10.4286 0.616191 10.2319 0.419434 9.98918 0.419434H1.82692C1.58423 0.419434 1.38747 0.616191 1.38747 0.858887V2.17766H1.05483C0.812139 2.17766 0.615381 2.37441 0.615381 2.61711C0.615381 2.8598 0.812139 3.05656 1.05483 3.05656H1.38747V3.93588H0.439453C0.196758 3.93588 0 4.13264 0 4.37533C0 4.61803 0.196758 4.81479 0.439453 4.81479H1.38747V8.85063C1.38747 9.09333 1.58423 9.29009 1.82692 9.29009H2.76234C2.84754 9.57368 3.00202 9.83355 3.21729 10.0488C3.56013 10.3917 4.01596 10.5805 4.50079 10.5805C4.98562 10.5805 5.44143 10.3917 5.78429 10.0488C6.00214 9.83097 6.15267 9.57099 6.2364 9.29492H10.433C10.5168 9.57099 10.6673 9.83097 10.8851 10.0488C11.228 10.3917 11.6838 10.5805 12.1686 10.5805C12.6535 10.5805 13.1093 10.3917 13.4521 10.0488C13.67 9.83097 13.8205 9.57099 13.9042 9.29492H14.5605C14.8032 9.29492 15 9.09816 15 8.85547V5.79907C15 5.68499 14.9556 5.57542 14.8763 5.49345ZM13.5237 5.35962H10.4163V3.63377H11.8533L13.5237 5.35962ZM2.26638 4.81476H4.55367C4.79637 4.81476 4.99312 4.618 4.99312 4.3753C4.99312 4.13261 4.79637 3.93585 4.55367 3.93585H2.26638V3.05653H4.87603C5.11872 3.05653 5.31548 2.85978 5.31548 2.61708C5.31548 2.37438 5.11872 2.17763 4.87603 2.17763H2.26638V1.29831H4.87603H9.5497L9.53736 8.41596H6.28137C6.21472 8.07342 6.04904 7.74649 5.78429 7.48171C5.44145 7.13885 4.98562 6.95006 4.50079 6.95006C4.01596 6.95006 3.56016 7.13885 3.21729 7.48171C2.95948 7.73952 2.78883 8.06123 2.72001 8.41112H2.26638V4.81476ZM5.16281 9.42734C4.98598 9.60418 4.75084 9.70156 4.50079 9.70156C4.25074 9.70156 4.01561 9.60418 3.83877 9.42734C3.66193 9.25051 3.56455 9.01537 3.56455 8.76529C3.56455 8.51519 3.66193 8.28005 3.83877 8.10321C4.01561 7.92638 4.25074 7.82899 4.50079 7.82899C4.75084 7.82899 4.98598 7.92638 5.16281 8.10321C5.52785 8.46828 5.52785 9.06228 5.16281 9.42734ZM12.8306 9.42734C12.6538 9.60418 12.4186 9.70156 12.1686 9.70156C11.9185 9.70156 11.6834 9.60418 11.5066 9.42734C11.1415 9.06228 11.1415 8.46831 11.5066 8.10324C11.6834 7.92641 11.9185 7.82902 12.1686 7.82902C12.4186 7.82902 12.6538 7.92641 12.8306 8.10324C13.0074 8.28008 13.1048 8.51521 13.1048 8.76532C13.1048 9.01537 13.0074 9.25051 12.8306 9.42734ZM13.9492 8.41599C13.8825 8.07345 13.7169 7.74652 13.4521 7.48174C13.1092 7.13888 12.6534 6.95009 12.1686 6.95009C11.6837 6.95009 11.2279 7.13888 10.8851 7.48174C10.6516 7.71521 10.4957 7.99704 10.4163 8.29522V6.23853H14.1211V8.41599H13.9492Z" fill="#E4AB93"/>
+                                                </svg>
+                                                <span>
+                                                    Shipping will cost extra money
+                                                </span>
+                                            </div>
+                                            <button class="category__basket--submit btn" type="submit">
+                                                Add to cart
+                                            </button>
+                                            <a href="#" class="category__basket--back">
+                                                Back to selection
+                                            </a>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__container container">
+                <a href="#" class="footer__logo">
+                    <img src="img/logo.svg" width="94" height="38" loading="lazy" alt="" class="footer__logo--img">
+                </a>
+                <div class="footer__social">
+                    <ul class="footer__social--list">
+                        <li class="footer__social--item">
+                            <a href="#" class="footer__social--link" title="Instagram">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_151_3548)">
+                                        <path d="M23.9773 7.05607C23.9211 5.78085 23.7149 4.90416 23.4195 4.14449C23.1147 3.33812 22.6459 2.61617 22.0316 2.01602C21.4315 1.40652 20.7048 0.932921 19.9078 0.632936C19.1437 0.337529 18.2716 0.131312 16.9964 0.0750879C15.7116 0.0141019 15.3038 0 12.0453 0C8.78686 0 8.37901 0.0141019 7.09903 0.0703262C5.82382 0.126551 4.94712 0.332951 4.18764 0.628174C3.38108 0.932922 2.65914 1.40176 2.05899 2.01602C1.44949 2.61617 0.976073 3.34288 0.675905 4.13991C0.380498 4.90416 0.174281 5.77609 0.118057 7.0513C0.0570706 8.33604 0.0429688 8.7439 0.0429688 12.0023C0.0429688 15.2608 0.0570706 15.6686 0.113295 16.9486C0.169519 18.2238 0.37592 19.1005 0.671326 19.8602C0.976073 20.6666 1.44949 21.3885 2.05899 21.9887C2.65914 22.5982 3.38585 23.0718 4.18288 23.3718C4.94712 23.6672 5.81906 23.8734 7.09446 23.9296C8.37425 23.986 8.78229 23.9999 12.0407 23.9999C15.2992 23.9999 15.707 23.986 16.987 23.9296C18.2622 23.8734 19.1389 23.6672 19.8984 23.3718C21.5113 22.7482 22.7865 21.4729 23.4101 19.8602C23.7054 19.096 23.9118 18.2238 23.968 16.9486C24.0242 15.6686 24.0383 15.2608 24.0383 12.0023C24.0383 8.7439 24.0336 8.33604 23.9773 7.05607ZM21.8161 16.8549C21.7644 18.027 21.5676 18.6599 21.4035 19.0819C21.0002 20.1274 20.1704 20.9572 19.1248 21.3605C18.7029 21.5246 18.0653 21.7215 16.8978 21.7729C15.632 21.8293 15.2523 21.8433 12.0501 21.8433C8.84785 21.8433 8.46344 21.8293 7.20214 21.7729C6.03004 21.7215 5.3971 21.5246 4.97515 21.3605C4.45484 21.1682 3.98124 20.8634 3.59682 20.4649C3.19831 20.0758 2.89356 19.6069 2.70126 19.0866C2.53717 18.6647 2.34029 18.027 2.28883 16.8596C2.23242 15.5937 2.2185 15.2139 2.2185 12.0117C2.2185 8.80946 2.23242 8.42505 2.28883 7.16394C2.34029 5.99183 2.53717 5.3589 2.70126 4.93694C2.89356 4.41645 3.19831 3.94303 3.60159 3.55843C3.99058 3.15992 4.45942 2.85517 4.97991 2.66306C5.40187 2.49896 6.03956 2.30209 7.2069 2.25044C8.47278 2.19422 8.85261 2.18011 12.0547 2.18011C15.2616 2.18011 15.6413 2.19422 16.9026 2.25044C18.0747 2.30209 18.7076 2.49896 19.1296 2.66306C19.6499 2.85517 20.1235 3.15992 20.5079 3.55843C20.9064 3.94761 21.2112 4.41645 21.4035 4.93694C21.5676 5.3589 21.7644 5.99641 21.8161 7.16394C21.8723 8.42981 21.8864 8.80946 21.8864 12.0117C21.8864 15.2139 21.8723 15.589 21.8161 16.8549Z" fill="#E84974"/>
+                                        <path d="M12.0442 5.8371C8.64049 5.8371 5.87891 8.5985 5.87891 12.0024C5.87891 15.4062 8.64049 18.1676 12.0442 18.1676C15.448 18.1676 18.2094 15.4062 18.2094 12.0024C18.2094 8.5985 15.448 5.8371 12.0442 5.8371ZM12.0442 16.0016C9.83604 16.0016 8.04492 14.2107 8.04492 12.0024C8.04492 9.79405 9.83604 8.00311 12.0442 8.00311C14.2525 8.00311 16.0434 9.79405 16.0434 12.0024C16.0434 14.2107 14.2525 16.0016 12.0442 16.0016Z" fill="#E84974"/>
+                                        <path d="M19.8925 5.5933C19.8925 6.38813 19.248 7.03261 18.453 7.03261C17.6581 7.03261 17.0137 6.38813 17.0137 5.5933C17.0137 4.79828 17.6581 4.15399 18.453 4.15399C19.248 4.15399 19.8925 4.79828 19.8925 5.5933Z" fill="#E84974"/>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_151_3548">
+                                            <rect width="24" height="24" fill="white"/>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer__social--item">
+                            <a href="#" class="footer__social--link" title="Google+">
+                                <svg width="31" height="19" viewBox="0 0 31 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M30.9992 7.9504H27.8992V4.8504H24.7992V7.9504H21.6992V11.0504H24.7992V14.1504H27.8992V11.0504H30.9992V7.9504Z" fill="#E84974"/>
+                                    <path d="M9.3 11.05H15.345C14.725 13.685 12.245 15.7 9.3 15.7C5.89 15.7 3.1 12.91 3.1 9.50001C3.1 6.09001 5.89 3.30001 9.3 3.30001C11.005 3.30001 12.555 3.92001 13.64 5.16001L15.81 2.99001C14.105 1.28501 11.78 0.200012 9.3 0.200012C4.185 0.200012 0 4.38501 0 9.50001C0 14.615 4.185 18.8 9.3 18.8C14.415 18.8 18.6 14.615 18.6 9.50001V7.95001H9.3V11.05Z" fill="#E84974"/>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__copy">
+                    ⓒCopywriting 2022
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.min.js"></script>
+
+</body>
+</html>

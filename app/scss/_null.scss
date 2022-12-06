@@ -26,6 +26,7 @@ input::-webkit-inner-spin-button {
 
 input[type=number] {
   -moz-appearance: textfield;
+  -webkit-appearance: none;
 }
 
 nav,footer,header,aside{display: block;}

@@ -11,10 +11,10 @@
     //transition: transform .2s ease-in-out;
 
     z-index: 99;
-    padding: 10px 0;
+    padding-top: 10px;
     
     @include _992 {
-        padding: 4.5px 0;
+        padding-top: 4.5px;
     }
 
     &._active {
@@ -43,6 +43,13 @@
         justify-content: space-between;
         //flex-wrap: wrap;
         align-items: center;
+    }
+
+    & > &__container {
+        padding-bottom: 10px;
+        @include _992 {
+            padding-bottom: 4.5px;
+        }
     }
 
     &__nav {
@@ -86,14 +93,14 @@
             flex-wrap: wrap;
             align-items: center;
 
-            padding-top: var(--height-header, 50px);
+            padding-top: var(--height-header-container, 50px);
 
             position: relative;
             &::before {
                 content: '';
                 position: fixed;
                 left: 0; top: 0;
-                width: 100%; height: var(--height-header, 50px);
+                width: 100%; height: var(--height-header-container, 50px);
                 background: var(--white);
             }
             
@@ -401,6 +408,7 @@
         background: var(--accent);
         border-radius: 50%;
         overflow: hidden;
+        box-shadow: 0px 15px 35px 0px #AE404240;
     
         z-index: 10;
     
@@ -453,5 +461,43 @@
             }
     
         }
+    }
+
+    &__page-address {
+        border-top: 1px solid #EFEFEF;
+        padding: 8px 0;
+        margin-left: -3px;
+
+        & ul {
+            display: flex;
+            flex-wrap: wrap;
+
+            & > li {
+                padding: 3px;
+
+                display: flex;
+                align-items: center;
+            }
+
+            & > li > a {
+                font-size: 12px;
+                line-height: 12px;
+                display: block;
+                
+                
+                transition: color .2s ease-in-out;
+                &[href] {
+                    color: #9A9A9A;
+                    &:hover {
+                        color: #b4b4b4;
+                    }
+                    &:active {
+                        color: #8b8b8b;
+                    }
+                }
+            }
+        }
+
+        
     }
 }

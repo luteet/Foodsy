@@ -41,8 +41,68 @@ body.addEventListener('click', function (event) {
 
   // =-=-=-=-=-=-=-=-=-=- </Custom select in header> -=-=-=-=-=-=-=-=-=-=-
 
+
+
+  // =-=-=-=-=-=-=-=-=-=- <basket popup> -=-=-=-=-=-=-=-=-=-=-
+
+  const openBasketPopup = $('.open-basket-popup')
+  if(openBasketPopup) {
+    const basketPopup = document.querySelector('.category__basket--popup');
+    basketPopup.classList.add('_active');
+    body.classList.add('_active');
+  }
+
+  const closeBasketPopup = $('.close-basket-popup')
+  if(closeBasketPopup) {
+    const basketPopup = closeBasketPopup.closest('.category__basket--popup');
+    basketPopup.classList.remove('_active');
+    body.classList.remove('_active');
+  }
+
+  // =-=-=-=-=-=-=-=-=-=- </basket popup> -=-=-=-=-=-=-=-=-=-=-
+
+
+  // =-=-=-=-=-=-=-=-=-=- <minus/plus length in basket> -=-=-=-=-=-=-=-=-=-=-
+
+  const dishMinus = $('.dish-minus');
+  if(dishMinus) {
+    const parent = dishMinus.parentElement,
+          input = parent.querySelector('.dish-length');
+    
+    if(input.value > 10) {
+      input.value = Number(input.value) - 1;
+    }
+  }
+ 
+  const dishPlus = $('.dish-plus');
+  if(dishPlus) {
+    const parent = dishPlus.parentElement,
+          input = parent.querySelector('.dish-length');
+    
+    input.value = Number(input.value) + 1;
+    
+
+  }
+
+  // =-=-=-=-=-=-=-=-=-=- </minus/plus length in basket> -=-=-=-=-=-=-=-=-=-=-
+
 })
 
+
+const dishLength = document.querySelectorAll('.dish-length');
+if(dishLength[0]) {
+  dishLength.forEach(dishLength => {
+    dishLength.addEventListener('blur', function(event) {
+      const input = event.target,
+            value = Number(input.value);
+            
+      if(value < 9) {
+        input.value = 10;
+      }
+
+    })
+  })
+}
 
 
 // =-=-=-=-=-=-=-=-=-=-=-=- <resize> -=-=-=-=-=-=-=-=-=-=-=-=
@@ -66,6 +126,7 @@ function resize() {
   windowSize = window.innerWidth
   html.style.setProperty('--height-screen', window.innerHeight + 'px');
   html.style.setProperty('--height-header', header.offsetHeight + 'px');
+  html.style.setProperty('--height-header-container', header.querySelector('.header__container').offsetHeight + 'px');
 
   /* resizeCheckFunc(992,
     function () {  // screen > 992px
@@ -90,14 +151,18 @@ window.onresize = resize;
 
 
 // =-=-=-=-=-=-=-=-=-=-=-=- <slider> -=-=-=-=-=-=-=-=-=-=-=-=
-/*
-let slider = new Swiper('.__slider', {
+
+let categorySlider = new Swiper('.category__slider', {
   
-    spaceBetween: 30,
+    spaceBetween: 20,
     slidesPerView: 1,
+    /* loopAdditionalSlides: 2,
+    loopFillGroupWithBlank: true,
+    loopedSlides: 3,
+    //slidesPerGroup: 2,
     centeredSlides: false,
 
-    loop: true,
+    loop: true, */
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
@@ -108,17 +173,21 @@ let slider = new Swiper('.__slider', {
     },
     breakpoints: {
       992: {
-        slidesPerView: 3,
-        centeredSlides: true,
+        slidesPerView: 4,
+        //slidesPerGroup: 3,
     
       },
       600: {
+        slidesPerView: 3,
+        //slidesPerGroup: 3,
+      },
+      500: {
         slidesPerView: 2,
-        centeredSlides: false,
+        //slidesPerGroup: 3,
       },
     }
 }); 
-*/
+
 // =-=-=-=-=-=-=-=-=-=-=-=- </slider> -=-=-=-=-=-=-=-=-=-=-=-=
 
 
