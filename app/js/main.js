@@ -218,7 +218,20 @@ let categorySlider = new Swiper('.category__slider', {
 
 // =-=-=-=-=-=-=-=-=-=-=-=- </slider> -=-=-=-=-=-=-=-=-=-=-=-=
 
-
+if(document.querySelector('.date-input')) {
+  const picker = datepicker('.date-input', {
+    onSelect: (instance, date) => {
+      // Do stuff when a date is selected (or unselected) on the calendar.
+      // You have access to the datepicker instance for convenience.
+    },
+    position: 'tl',
+    formatter: (input, date, instance) => {
+      const value = date.toLocaleDateString('en-GB')
+      input.value = value.replace(/\//g, " - ") // => '1/1/2099'
+    },
+    dateSelected: new Date()
+  })
+}
 
 
 /* 

@@ -1,0 +1,121 @@
+@@include("html/_header.html", {
+    "link": 'My orders'
+})
+
+        <main class="main">
+            <section class="my-orders">
+                <div class="my-orders__container container">
+                    <h2 class="my-orders__title section-title _decor-line">
+                        My orders
+                    </h2>
+                    <div class="my-orders__status">
+                        <ul class="my-orders__status--list">
+                            <li class="my-orders__status--item _active">
+                                <b class="my-orders__status--number">1</b>
+                                <span class="my-orders__status--text">Personal data</span>
+                            </li>
+                            <li class="my-orders__status--item _active">
+                                <b class="my-orders__status--number">2</b>
+                                <span class="my-orders__status--text">Delivery</span>
+                            </li>
+                            <li class="my-orders__status--item">
+                                <b class="my-orders__status--number">3</b>
+                                <span class="my-orders__status--text">Payment</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="my-orders__block">
+                        <div class="my-orders__main">
+                            <form action="#" class="my-orders__form">
+                                <h3 class="my-orders__form--title title _large">
+                                    Delivery
+                                </h3>
+                                <div class="my-orders__form--body">
+                                    <div class="my-orders__form--label">
+                                        <span class="my-orders__form--name">Address*</span>
+                                        <span class="my-orders__form--label-body _select-arrow">
+                                            <select name="address" required class="my-orders__form--select select">
+                                                <option disabled selected>Address</option>
+                                                <option value="address-1">Lorem ipsum dolor sit amet.</option>
+                                                <option value="address-2">Lorem ipsum dolor sit amet consectetur adipisicing.</option>
+                                                <option value="address-3">Lorem ipsum dolor sit.</option>
+                                            </select>    
+                                        </span>
+                                    </div>
+                                    <div class="my-orders__form--row">
+                                        <div class="my-orders__form--item">
+                                            <label class="my-orders__form--label _flex">
+                                                <span class="my-orders__form--name">Delivery data</span>
+                                                <span class="my-orders__form--label-body _date">
+                                                    <input type="text" required class="my-orders__form--data input _date date-input">
+                                                </span>
+                                            </label>
+                                        </div>
+                                        <div class="my-orders__form--item">
+                                            <label class="my-orders__form--label _flex">
+                                                <span class="my-orders__form--name">Time of delivery</span>
+                                                <input type="time" required class="my-orders__form--time input _time" value="12:20:00">
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="my-orders__footer _end _min-pt">
+                                <button class="my-orders__submit btn _center" type="submit">
+                                    Proceed
+                                </button>
+                            </div>
+                        </div>
+                        <div class="my-orders__aside">
+                            <form action="#" class="my-orders__order">
+                                <h3 class="my-orders__order--title title">
+                                    Order
+                                </h3>
+                                <ul class="my-orders__order--list">
+                                    <li class="my-orders__order--item my-orders__order-item">
+                                        <div class="my-orders__order-item--image">
+                                            <div class="my-orders__order-item--image-body">
+                                                <picture>
+                                                    <source srcset="img/my-orders/order-image.webp" type="image/webp">
+                                                    <img src="img/my-orders/order-image.jpg" alt="" width="79" height="79" loading="lazy">
+                                                </picture>
+                                            </div>
+                                        </div>
+                                        <div class="my-orders__order-item--info">
+                                            <h4 class="my-orders__order-item--title">
+                                                Canapes
+                                            </h4>
+                                            <div class="my-orders__order-item--text">
+                                                Peppered beef topped with a truffle butter
+                                                and mustard frills
+                                            </div>
+                                            <div class="my-orders__order-item--row">
+                                                <span class="my-orders__order-item--category">
+                                                    Cold menu
+                                                </span>
+                                                <b class="my-orders__order-item--length">
+                                                    9 pieces
+                                                </b>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="my-orders__order--amount">
+                                    <span>Amount</span>
+                                    <span>1</span>
+                                </div>
+                                <div class="my-orders__order--total">
+                                    <b>Total:</b>
+                                    <strong>9£</strong>
+                                </div>
+                                <button class="my-orders__order--submit btn _full _disabled" type="submit">
+                                    Сheckout
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+@@include("html/_footer.html")

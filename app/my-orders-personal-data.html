@@ -1,0 +1,106 @@
+@@include("html/_header.html", {
+    "link": 'My orders'
+})
+
+        <main class="main">
+            <section class="my-orders">
+                <div class="my-orders__container container">
+                    <h2 class="my-orders__title section-title _decor-line">
+                        My orders
+                    </h2>
+                    <div class="my-orders__status">
+                        <ul class="my-orders__status--list">
+                            <li class="my-orders__status--item _active">
+                                <b class="my-orders__status--number">1</b>
+                                <span class="my-orders__status--text">Personal data</span>
+                            </li>
+                            <li class="my-orders__status--item">
+                                <b class="my-orders__status--number">2</b>
+                                <span class="my-orders__status--text">Delivery</span>
+                            </li>
+                            <li class="my-orders__status--item">
+                                <b class="my-orders__status--number">3</b>
+                                <span class="my-orders__status--text">Payment</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="my-orders__block">
+                        <div class="my-orders__main">
+                            <form action="#" class="my-orders__form">
+                                <h3 class="my-orders__form--title title _large">
+                                    Personal data
+                                </h3>
+                                <div class="my-orders__form--body">
+                                    <label class="my-orders__form--label">
+                                        <span class="my-orders__form--name">Name*</span>
+                                        <input type="text" name="name" placeholder="Name*" required class="my-orders__form--input input">
+                                    </label>
+                                    <label class="my-orders__form--label">
+                                        <span class="my-orders__form--name">E-mail*</span>
+                                        <input type="email" name="email" placeholder="E-mail*" required class="my-orders__form--input input">
+                                    </label>
+                                    <label class="my-orders__form--label">
+                                        <span class="my-orders__form--name">Phone*</span>
+                                        <input type="tel" name="tel" placeholder="Phone*" required class="my-orders__form--input input">
+                                    </label>
+                                </div>
+                            </form>
+                            <div class="my-orders__footer _end _min-pt">
+                                <button class="my-orders__submit btn _center" type="submit">
+                                    Proceed
+                                </button>
+                            </div>
+                        </div>
+                        <div class="my-orders__aside">
+                            <form action="#" class="my-orders__order">
+                                <h3 class="my-orders__order--title title">
+                                    Order
+                                </h3>
+                                <ul class="my-orders__order--list">
+                                    <li class="my-orders__order--item my-orders__order-item">
+                                        <div class="my-orders__order-item--image">
+                                            <div class="my-orders__order-item--image-body">
+                                                <picture>
+                                                    <source srcset="img/my-orders/order-image.webp" type="image/webp">
+                                                    <img src="img/my-orders/order-image.jpg" alt="" width="79" height="79" loading="lazy">
+                                                </picture>
+                                            </div>
+                                        </div>
+                                        <div class="my-orders__order-item--info">
+                                            <h4 class="my-orders__order-item--title">
+                                                Canapes
+                                            </h4>
+                                            <div class="my-orders__order-item--text">
+                                                Peppered beef topped with a truffle butter
+                                                and mustard frills
+                                            </div>
+                                            <div class="my-orders__order-item--row">
+                                                <span class="my-orders__order-item--category">
+                                                    Cold menu
+                                                </span>
+                                                <b class="my-orders__order-item--length">
+                                                    9 pieces
+                                                </b>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="my-orders__order--amount">
+                                    <span>Amount</span>
+                                    <span>1</span>
+                                </div>
+                                <div class="my-orders__order--total">
+                                    <b>Total:</b>
+                                    <strong>9£</strong>
+                                </div>
+                                <button class="my-orders__order--submit btn _full _disabled" type="submit">
+                                    Сheckout
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+@@include("html/_footer.html")

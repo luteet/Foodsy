@@ -52,7 +52,8 @@ function images() {
 function scriptsLib() {
     return src([
         'node_modules/swiper/swiper-bundle.min.js', // Слайдер
-        'node_modules/magic-grid/dist/magic-grid.min.js'
+        'node_modules/magic-grid/dist/magic-grid.min.js',
+        'node_modules/js-datepicker/dist/datepicker.min.js',
         //'node_modules/clipboard/dist/clipboard.min.js', // Копирование в буфер обмена
         //'node_modules/aos/dist/aos.js', // Анимация
         //'node_modules/slim-select/dist/slimselect.min.js', // Select
@@ -138,6 +139,7 @@ function stylesLib() {
     return src([
         'node_modules/normalize.css/normalize.css',
         'node_modules/swiper/swiper-bundle.min.css', // Слайдер
+        'node_modules/js-datepicker/dist/datepicker.min.css',
         //'node_modules/slim-select/dist/slimselect.min.css', // Select
         //'node_modules/slick-carousel/slick/slick.css', // Слайдер (jQuery)
         //'node_modules/magnific-popup/dist/magnific-popup.css' // Попап (jQuery)
