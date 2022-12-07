@@ -1,0 +1,153 @@
+@@include("html/_header-page-address.html", {
+    "link": 'Delivered Buffet'
+})
+
+        <main class="main">
+            <section class="buffet">
+                <div class="buffet__bg"></div>
+                <div class="buffet__container container">
+                    <h2 class="buffet__section-title section-title _decor-line">
+                        Delivered Buffet
+                    </h2>
+                    <form action="#" class="buffet__block">
+                        <menu class="buffet__menu">
+                            <ul class="buffet__menu--list">
+                                @@loop("html/buffet/_card.html", [
+                                    {
+                                        "slide": {
+                                            "img_1": '1',
+                                            "img_2": '2',
+                                            "img_3": '3',
+                                            "img_4": '4',
+                                            "img_5": '5',
+                                        },
+                                    },
+                                    {
+                                        "slide": {
+                                            "img_1": '2',
+                                            "img_2": '3',
+                                            "img_3": '4',
+                                            "img_4": '5',
+                                            "img_5": '1',
+                                        },
+                                    },
+                                    {
+                                        "slide": {
+                                            "img_1": '3',
+                                            "img_2": '4',
+                                            "img_3": '5',
+                                            "img_4": '1',
+                                            "img_5": '2',
+                                        },
+                                    },
+                                    {
+                                        "slide": {
+                                            "img_1": '4',
+                                            "img_2": '5',
+                                            "img_3": '1',
+                                            "img_4": '2',
+                                            "img_5": '3',
+                                        },
+                                    },
+                                    {
+                                        "slide": {
+                                            "img_1": '5',
+                                            "img_2": '1',
+                                            "img_3": '2',
+                                            "img_4": '3',
+                                            "img_5": '4',
+                                        },
+                                    },
+                                    {
+                                        "slide": {
+                                            "img_1": '1',
+                                            "img_2": '2',
+                                            "img_3": '3',
+                                            "img_4": '4',
+                                            "img_5": '5',
+                                        },
+                                    },
+                                    {
+                                        "slide": {
+                                            "img_1": '1',
+                                            "img_2": '2',
+                                            "img_3": '3',
+                                            "img_4": '4',
+                                            "img_5": '5',
+                                        },
+                                    },
+                                    {
+                                        "slide": {
+                                            "img_1": '2',
+                                            "img_2": '3',
+                                            "img_3": '4',
+                                            "img_4": '5',
+                                            "img_5": '1',
+                                        },
+                                    },
+                                    {
+                                        "slide": {
+                                            "img_1": '3',
+                                            "img_2": '4',
+                                            "img_3": '5',
+                                            "img_4": '1',
+                                            "img_5": '2',
+                                        },
+                                    }
+                                ])
+                            </ul>
+                        </menu>
+                        <aside class="buffet__basket basket">
+                            <button class="basket__open open-basket-popup btn _bold _center _full" data-id="basket-popup" aria-label="Basket" type="button">
+                                <img src="img/icons/basket.svg" width="22" height="22" alt="">
+                                <span>Basket</span>
+                            </button>
+                            <div class="basket__popup" id="basket-popup">
+                                <button class="basket__close-btn close-basket-popup" title="Close" type="button">
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.586047 11.9998C0.470144 11.9999 0.356837 11.9655 0.26046 11.9011C0.164083 11.8367 0.0889654 11.7452 0.0446082 11.6381C0.000250996 11.5311 -0.0113527 11.4132 0.0112649 11.2996C0.0338824 11.1859 0.0897052 11.0815 0.171672 10.9995L10.9998 0.171396C11.1097 0.0614965 11.2588 -0.000244141 11.4142 -0.000244141C11.5696 -0.000244141 11.7186 0.0614965 11.8285 0.171396C11.9384 0.281295 12.0002 0.43035 12.0002 0.585771C12.0002 0.741191 11.9384 0.890247 11.8285 1.00015L1.00042 11.8283C0.946056 11.8827 0.881462 11.926 0.810351 11.9554C0.739239 11.9848 0.663012 11.9999 0.586047 11.9998Z" fill="#696969"/>
+                                        <path d="M11.4141 11.9998C11.3372 11.9999 11.2609 11.9848 11.1898 11.9554C11.1187 11.926 11.0541 11.8827 10.9998 11.8283L0.17164 1.00015C0.0617407 0.890247 0 0.741191 0 0.585771C0 0.43035 0.0617407 0.281295 0.17164 0.171396C0.281539 0.0614965 0.430594 -0.000244141 0.586015 -0.000244141C0.741436 -0.000244141 0.890491 0.0614965 1.00039 0.171396L11.8285 10.9995C11.9105 11.0815 11.9663 11.1859 11.9889 11.2996C12.0115 11.4132 11.9999 11.5311 11.9556 11.6381C11.9112 11.7452 11.8361 11.8367 11.7397 11.9011C11.6433 11.9655 11.53 11.9999 11.4141 11.9998Z" fill="#696969"/>
+                                    </svg>
+                                </button>
+                                <div class="basket__body">
+                                    <h3 class="basket__title">
+                                        Basket
+                                    </h3>
+                                    <div class="basket__terms">
+                                        <ul>
+                                            <li>Minimum order from 250£</li>
+                                            <li>Order 72 hours in advance</li>
+                                        </ul>
+                                    </div>
+                                    <div class="basket__form _bt">
+                                        <h4 class="basket__min-title _min">
+                                            Enter the number of guests:
+                                        </h4>
+                                        <label class="basket__label">
+                                            <input type="number" required min="0" name="number-guests" placeholder="Number of guests" class="basket__min-input">
+                                            <span class="basket__alt-note _none-border">
+                                                The desired number of canapes for such a number of people is 60 pcs.
+                                            </span>
+                                        </label>
+                                        <div class="basket__footer">
+                                            <div class="basket__total">
+                                                <span>Total:</span>
+                                                <strong>220 £</strong>
+                                            </div>
+                                            <button class="basket__submit btn" type="submit">
+                                                Add to cart
+                                            </button>
+                                            <a href="#" class="basket__back">
+                                                Back to selection
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </aside>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+@@include("html/_footer.html")

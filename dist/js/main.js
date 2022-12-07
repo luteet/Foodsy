@@ -56,14 +56,14 @@ body.addEventListener('click', function (event) {
 
   const openBasketPopup = $('.open-basket-popup')
   if(openBasketPopup) {
-    const basketPopup = document.querySelector('.category__basket--popup');
+    const basketPopup = document.querySelector(`#${openBasketPopup.dataset.id}`);
     basketPopup.classList.add('_active');
     body.classList.add('_active');
   }
 
   const closeBasketPopup = $('.close-basket-popup')
   if(closeBasketPopup) {
-    const basketPopup = closeBasketPopup.closest('.category__basket--popup');
+    const basketPopup = closeBasketPopup.closest('.basket__popup');
     basketPopup.classList.remove('_active');
     body.classList.remove('_active');
   }
@@ -137,7 +137,7 @@ if(dishLength[0]) {
 
 let resizeCheck = {}, windowSize;
 
-/* function resizeCheckFunc(size, minWidth, maxWidth) {
+function resizeCheckFunc(size, minWidth, maxWidth) {
   if (windowSize <= size && (resizeCheck[String(size)] == true || resizeCheck[String(size)] == undefined) && resizeCheck[String(size)] != false) {
     resizeCheck[String(size)] = false;
     maxWidth(); // < size
@@ -147,7 +147,7 @@ let resizeCheck = {}, windowSize;
     resizeCheck[String(size)] = true;
     minWidth(); // > size
   }
-} */
+}
 
 function resize() {
 
@@ -156,17 +156,21 @@ function resize() {
   html.style.setProperty('--height-header', header.offsetHeight + 'px');
   html.style.setProperty('--height-header-container', header.querySelector('.header__container').offsetHeight + 'px');
 
-  /* resizeCheckFunc(992,
+  resizeCheckFunc(992,
     function () {  // screen > 992px
 
-
+      const activeBasket = document.querySelector('.basket__popup._active')
+      if(activeBasket) {
+        activeBasket.classList.remove('_active');
+        body.classList.remove('_active');
+      }
 
   },
   function () {  // screen < 992px
 
 
 
-  }); */
+  });
 
 }
 
@@ -214,16 +218,24 @@ let categorySlider = new Swiper('.category__slider', {
         //slidesPerGroup: 3,
       },
     }
+});
+
+let buffetCardSlider = new Swiper('.buffet__card--slider', {
+  
+  spaceBetween: 15,
+  slidesPerView: 1,
+  
+  navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+  },
+
 }); 
 
 // =-=-=-=-=-=-=-=-=-=-=-=- </slider> -=-=-=-=-=-=-=-=-=-=-=-=
 
 if(document.querySelector('.date-input')) {
   const picker = datepicker('.date-input', {
-    onSelect: (instance, date) => {
-      // Do stuff when a date is selected (or unselected) on the calendar.
-      // You have access to the datepicker instance for convenience.
-    },
     position: 'tl',
     formatter: (input, date, instance) => {
       const value = date.toLocaleDateString('en-GB')

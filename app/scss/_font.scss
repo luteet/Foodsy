@@ -31,7 +31,7 @@
     
     &._large {
         font-weight: 500;
-        
+
         @include _768 {
             font-size: 1.75rem;
         }
@@ -54,10 +54,16 @@
 
     @include _768 {
         font-size: 2.8125rem;
+        &._large {
+            font-size: 3.75rem;   
+        }
     }
     
     @include _992 {
         font-size: 3.4375rem;
+        &._large {
+            font-size: 6.25rem;
+        }
     }
 
     &._decor-line {
