@@ -188,13 +188,7 @@ let categorySlider = new Swiper('.category__slider', {
   
     spaceBetween: 20,
     slidesPerView: 1,
-    /* loopAdditionalSlides: 2,
-    loopFillGroupWithBlank: true,
-    loopedSlides: 3,
-    //slidesPerGroup: 2,
-    centeredSlides: false,
-
-    loop: true, */
+    
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
@@ -206,16 +200,12 @@ let categorySlider = new Swiper('.category__slider', {
     breakpoints: {
       992: {
         slidesPerView: 4,
-        //slidesPerGroup: 3,
-    
       },
       600: {
         slidesPerView: 3,
-        //slidesPerGroup: 3,
       },
       500: {
         slidesPerView: 2,
-        //slidesPerGroup: 3,
       },
     }
 });
@@ -230,17 +220,23 @@ let buffetCardSlider = new Swiper('.buffet__card--slider', {
       prevEl: '.swiper-button-prev',
   },
 
-}); 
+});
 
 let aboutUsSlider = new Swiper('.about-us__slider', {
   
-  spaceBetween: 20,
+  spaceBetween: 10,
   slidesPerView: 2,
 
   navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
   },
+
+  breakpoints: {
+    600: {
+      spaceBetween: 20,
+    },
+  }
 });
 
 // =-=-=-=-=-=-=-=-=-=-=-=- </slider> -=-=-=-=-=-=-=-=-=-=-=-=
