@@ -1,0 +1,83 @@
+@@include("html/_header-page-address.html", {
+    "link": 'Delivered Buffet'
+})
+
+        <main class="main">
+            <section class="contact-us section-padding">
+                <div class="contact-us__container container">
+                    <h2 class="contact-us__section-title section-title _decor-line">
+                        Contact us
+                    </h2>
+                    <span class="contact-us__sub-text">We cater across and around London & nearby counties</span>
+                    <div class="contact-us__info">
+                        <ul class="contact-us__info--list">
+                            <li class="contact-us__info--item contact-us__info-item">
+                                <address class="contact-us__info-item--body">
+                                    <div class="contact-us__info-item--icon">
+                                        <img src="img/icons/pin.svg" width="30" height="30" alt="">
+                                    </div>
+                                    <h3 class="contact-us__info-item--title">Address:</h3>
+                                    <a href="#" class="contact-us__info-item--link">Bath Road, Chiswick, West London, W4 1LJ</a>
+                                </address>
+                            </li>
+                            <li class="contact-us__info--item contact-us__info-item">
+                                <div class="contact-us__info-item--body">
+                                    <div class="contact-us__info-item--icon">
+                                        <img src="img/icons/call.svg" width="26" height="26" alt="">
+                                    </div>
+                                    <h3 class="contact-us__info-item--title">Phone:</h3>
+                                    <a href="tel:+07747025860" class="contact-us__info-item--link">077 470 258 60</a>
+                                </div>
+                            </li>
+                            <li class="contact-us__info--item contact-us__info-item">
+                                <div class="contact-us__info-item--body">
+                                    <div class="contact-us__info-item--icon">
+                                        <img src="img/icons/email.svg" width="35" height="35" alt="">
+                                    </div>
+                                    <h3 class="contact-us__info-item--title">E-mail:</h3>
+                                    <a href="mailto:foodsyparty@gmail.com" class="contact-us__info-item--link">foodsyparty@gmail.com</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <form action="#" class="contact-us__form">
+                        <div class="contact-us__form--body">
+                            <h3 class="contact-us__form--title title _large">
+                                Fill in the form
+                            </h3>
+                            <label class="contact-us__form--label">
+                                <span class="contact-us__form--name">Name*</span>
+                                <input type="text" name="name" required placeholder="Name*" class="contact-us__form--input input">
+                            </label>
+                            <label class="contact-us__form--label">
+                                <span class="contact-us__form--name">E-mail*</span>
+                                <input type="email" name="email" required placeholder="E-mail*" class="contact-us__form--input input">
+                            </label>
+                            <label class="contact-us__form--label">
+                                <span class="contact-us__form--name">Nu of Guests:</span>
+                                <input type="number" name="number-of-guests" placeholder="Nu of Guests:" class="contact-us__form--input input">
+                            </label>
+                            <label class="contact-us__form--label">
+                                <span class="contact-us__form--name">Event Date and Location:</span>
+                                <input type="text" name="date-and-location:" placeholder="Event Date and Location:" class="contact-us__form--input input">
+                            </label>
+                            <label class="contact-us__form--label">
+                                <span class="contact-us__form--name">Type of food considering</span>
+                                <input type="text" name="type-food-considering" placeholder="Type of food considering" class="contact-us__form--input input">
+                            </label>
+                            <label class="contact-us__form--label _full">
+                                <span class="contact-us__form--name">Message:</span>
+                                <textarea name="message" rows="5" placeholder="Message:" class="contact-us__form--textarea textarea"></textarea>
+                            </label>
+                            <div class="contact-us__form--footer">
+                                <button class="contact-us__form--submit btn _alt" type="submit">
+                                    Send
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+@@include("html/_footer.html")

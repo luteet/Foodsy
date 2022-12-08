@@ -28,6 +28,29 @@
     @include _992 {
         font-size: 1.75rem;
     }
+
+    &._min {
+        font-weight: 500;
+        @include _768 {
+            font-size: 1.25rem;
+        }
+        
+        @include _992 {
+            font-size: 1.5625rem;
+        }
+    }
+
+    &._alt {
+        font-size: 1.125rem;
+
+        @include _768 {
+            font-size: 1.5625rem;
+        }
+    
+        @include _992 {
+            font-size: 1.875rem;
+        }
+    }
     
     &._large {
         font-weight: 500;
@@ -49,6 +72,7 @@
     font-size: 1.875rem;
     line-height: 115%;
     letter-spacing: 0.01em;
+    
 
     color: #222222;
 

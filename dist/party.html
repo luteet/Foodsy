@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <!-- <link rel="SHORTCUT ICON" href="img/logo.svg" type="image/svg"> -->
+</head>
+<body>
+
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container container">
+                <a href="#" class="header__logo">
+                    <img src="img/logo.svg" alt="" width="94" height="38" class="header__logo--img">
+                </a>
+                <nav class="header__nav">
+                    <div class="header__nav--body">
+                        <ul class="header__nav--list">
+                            <li class="header__nav--item">
+                                <a href="#" class="header__nav--link" aria-label="Delivered | Canapes">
+                                    <div class="header__nav--link-icon">
+                                        <img src="img/header/nav-icon-1.svg" width="20" height="20" alt="">
+                                    </div>
+                                    <span>Delivered | Canapes</span>
+                                </a>
+                            </li>
+                            <li class="header__nav--item">
+                                <a href="#" class="header__nav--link" aria-label="Delivered | Buffet">
+                                    <div class="header__nav--link-icon">
+                                        <img src="img/header/nav-icon-2.svg" width="20" height="20" alt="">
+                                    </div>
+                                    <span>Delivered | Buffet</span>
+                                </a>
+                            </li>
+                            <li class="header__nav--item">
+                                <a href="#" class="header__nav--link" aria-label="Delivered | Dinner Party">
+                                    <div class="header__nav--link-icon">
+                                        <img src="img/header/nav-icon-3.svg" width="20" height="20" alt="">
+                                    </div>
+                                    <span>Delivered | Dinner Party</span>
+                                </a>
+                            </li>
+                            <li class="header__nav--item">
+                                <a href="#" class="header__nav--link" aria-label="Delivered | Kids Party">
+                                    <div class="header__nav--link-icon">
+                                        <img src="img/header/nav-icon-4.svg" width="20" height="20" alt="">
+                                    </div>
+                                    <span>Delivered | Kids Party</span>
+                                </a>
+                            </li>
+                            <li class="header__nav--item">
+                                <a href="#" class="header__nav--link" aria-label="Catering">
+                                    <div class="header__nav--link-icon">
+                                        <img src="img/header/nav-icon-5.svg" width="20" height="20" alt="">
+                                    </div>
+                                    <span>Catering</span>
+                                </a>
+                            </li>
+                            <li class="header__nav--item header__nav--select">
+                                <button class="header__nav--select-target" aria-label="About">
+                                    <div class="header__nav--select-icon">
+                                        <img src="img/header/nav-icon-6.svg" width="20" height="20" alt="">
+                                    </div>
+                                    <span>About</span>
+                                </button>
+                                <div class="header__nav--select-block">
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                Contact us
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Testimonials
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="header__nav--basket header__basket">
+                            <div class="header__basket--text">
+                                Доставка по Лондону
+                            </div>
+                            <a href="#" class="header__basket--btn" title="Basket" data-length="0">
+                                <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M22 7.24999H18.2642L14.3395 0.708679C14.1448 0.383742 13.7225 0.277652 13.3962 0.47303C13.0706 0.668409 12.9652 1.09069 13.1606 1.41632L16.6608 7.24999H5.33928L8.83947 1.41627C9.03485 1.09064 8.92945 0.668362 8.60382 0.472984C8.27685 0.277606 7.85592 0.383696 7.66054 0.708632L3.7358 7.24994H0V8.62495H1.49216L3.23876 17.9418C3.42137 18.9173 4.27402 19.625 5.26638 19.625H16.7337C17.726 19.625 18.5786 18.9173 18.7606 17.9425L20.5078 8.62495H22C22 8.62495 22 7.24999 22 7.24999V7.24999ZM17.409 17.6894C17.3486 18.0143 17.0646 18.25 16.7336 18.25H5.26638C4.93538 18.25 4.6514 18.0144 4.5903 17.6887L2.89068 8.62495H19.1094L17.409 17.6894V17.6894Z" fill="white"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+                <button class="header__burger" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <div class="header__page-address">
+                <div class="header__container container">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <svg width="4" height="6" viewBox="0 0 4 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 5L3 3L1 1" stroke="#6A6565" stroke-linecap="round"/>
+                            </svg>
+                        </li>
+                        <li>
+                            <a>
+                                Delivered Buffet
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+            <section class="buffet">
+                <div class="buffet__bg"></div>
+                <div class="buffet__container container">
+                    <h2 class="buffet__section-title section-title _decor-line">
+                        Delivered Buffet
+                    </h2>
+                    <form action="#" class="buffet__block">
+                        <menu class="buffet__menu">
+                            <ul class="buffet__menu--list">
+                                <li class="buffet__menu--card buffet__card">
+    <div class="buffet__card--body">
+        <div class="buffet__card--slider swiper">
+            <ul class="buffet__card--slider-list swiper-wrapper">
+                <li class="buffet__card--slider-slide swiper-slide">
+                    <div class="buffet__card--slider-image">
+                        <picture>
+                            <source srcset="img/buffet/slide-6.webp" type="image/webp">
+                            <img src="img/buffet/slide-6.jpg" alt="" width="258" height="255" loading="lazy">
+                        </picture>
+                    </div>
+                </li>
+                <li class="buffet__card--slider-slide swiper-slide">
+                    <div class="buffet__card--slider-image">
+                        <picture>
+                            <source srcset="img/buffet/slide-7.webp" type="image/webp">
+                            <img src="img/buffet/slide-7.jpg" alt="" width="258" height="255" loading="lazy">
+                        </picture>
+                    </div>
+                </li>
+                <li class="buffet__card--slider-slide swiper-slide">
+                    <div class="buffet__card--slider-image">
+                        <picture>
+                            <source srcset="img/buffet/slide-8.webp" type="image/webp">
+                            <img src="img/buffet/slide-8.jpg" alt="" width="258" height="255" loading="lazy">
+                        </picture>
+                    </div>
+                </li>
+                <li class="buffet__card--slider-slide swiper-slide">
+                    <div class="buffet__card--slider-image">
+                        <picture>
+                            <source srcset="img/buffet/slide-1.webp" type="image/webp">
+                            <img src="img/buffet/slide-1.jpg" alt="" width="258" height="255" loading="lazy">
+                        </picture>
+                    </div>
+                </li>
+                <li class="buffet__card--slider-slide swiper-slide">
+                    <div class="buffet__card--slider-image">
+                        <picture>
+                            <source srcset="img/buffet/slide-2.webp" type="image/webp">
+                            <img src="img/buffet/slide-2.jpg" alt="" width="258" height="255" loading="lazy">
+                        </picture>
+                    </div>
+                </li>
+            </ul>
+            <div class="buffet__card--slider-nav">
+                <button class="buffet__card--slider-arrow swiper-button-prev"></button>
+                <button class="buffet__card--slider-arrow swiper-button-next"></button>
+            </div>
+        </div>
+        <h3 class="buffet__card--title">
+            Party Food Delivered
+        </h3>
+        <ul class="buffet__card--list">
+            <li>
+                Name of the dish
+            </li>
+            <li>
+                Name of the dish
+            </li>
+            <li>
+                Name of the dish
+            </li>
+            <li>
+                Name of the dish
+            </li>
+        </ul>
+        <div class="buffet__card--info">
+            <div class="buffet__card--info-elem">
+                <span>
+                    <img src="img/icons/user.svg" width="13" height="13" alt="User icon">
+                </span>
+                <b>
+                    10 people
+                </b>
+            </div>
+            <div class="buffet__card--info-elem">
+                <span>
+                    <img src="img/icons/coins.svg" width="13" height="13" alt="Coins icon">
+                </span>
+                <b>
+                    450£
+                </b>
+            </div>
+        </div>
+        <div class="buffet__card--footer">
+            <div class="buffet__card--radio radio-btn">
+                <label class="radio-btn__label">
+                    <input type="radio" name="delivered" value="1" required class="radio-btn__input">
+                    <span class="radio-btn__element">Choose</span>
+                </label>
+            </div>
+        </div>
+    </div>
+</li><li class="buffet__menu--card buffet__card">
+    <div class="buffet__card--body">
+        <div class="buffet__card--slider swiper">
+            <ul class="buffet__card--slider-list swiper-wrapper">
+                <li class="buffet__card--slider-slide swiper-slide">
+                    <div class="buffet__card--slider-image">
+                        <picture>
+                            <source srcset="img/buffet/slide-7.webp" type="image/webp">
+                            <img src="img/buffet/slide-7.jpg" alt="" width="258" height="255" loading="lazy">
+                        </picture>
+                    </div>
+                </li>
+                <li class="buffet__card--slider-slide swiper-slide">
+                    <div class="buffet__card--slider-image">
+                        <picture>
+                            <source srcset="img/buffet/slide-8.webp" type="image/webp">
+                            <img src="img/buffet/slide-8.jpg" alt="" width="258" height="255" loading="lazy">
+                        </picture>
+                    </div>
+                </li>
+                <li class="buffet__card--slider-slide swiper-slide">
+                    <div class="buffet__card--slider-image">
+                        <picture>
+                            <source srcset="img/buffet/slide-6.webp" type="image/webp">
+                            <img src="img/buffet/slide-6.jpg" alt="" width="258" height="255" loading="lazy">
+                        </picture>
+                    </div>
+                </li>
+                <li class="buffet__card--slider-slide swiper-slide">
+                    <div class="buffet__card--slider-image">
+                        <picture>
+                            <source srcset="img/buffet/slide-1.webp" type="image/webp">
+                            <img src="img/buffet/slide-1.jpg" alt="" width="258" height="255" loading="lazy">
+                        </picture>
+                    </div>
+                </li>
+                <li class="buffet__card--slider-slide swiper-slide">
+                    <div class="buffet__card--slider-image">
+                        <picture>
+                            <source srcset="img/buffet/slide-2.webp" type="image/webp">
+                            <img src="img/buffet/slide-2.jpg" alt="" width="258" height="255" loading="lazy">
+                        </picture>
+                    </div>
+                </li>
+            </ul>
+            <div class="buffet__card--slider-nav">
+                <button class="buffet__card--slider-arrow swiper-button-prev"></button>
+                <button class="buffet__card--slider-arrow swiper-button-next"></button>
+            </div>
+        </div>
+        <h3 class="buffet__card--title">
+            Party Food Delivered
+        </h3>
+        <ul class="buffet__card--list">
+            <li>
+                Name of the dish
+            </li>
+            <li>
+                Name of the dish
+            </li>
+            <li>
+                Name of the dish
+            </li>
+            <li>
+                Name of the dish
+            </li>
+        </ul>
+        <div class="buffet__card--info">
+            <div class="buffet__card--info-elem">
+                <span>
+                    <img src="img/icons/user.svg" width="13" height="13" alt="User icon">
+                </span>
+                <b>
+                    10 people
+                </b>
+            </div>
+            <div class="buffet__card--info-elem">
+                <span>
+                    <img src="img/icons/coins.svg" width="13" height="13" alt="Coins icon">
+                </span>
+                <b>
+                    450£
+                </b>
+            </div>
+        </div>
+        <div class="buffet__card--footer">
+            <div class="buffet__card--radio radio-btn">
+                <label class="radio-btn__label">
+                    <input type="radio" name="delivered" value="1" required class="radio-btn__input">
+                    <span class="radio-btn__element">Choose</span>
+                </label>
+            </div>
+        </div>
+    </div>
+</li><li class="buffet__menu--card buffet__card">
+    <div class="buffet__card--body">
+        <div class="buffet__card--slider swiper">
+            <ul class="buffet__card--slider-list swiper-wrapper">
+                <li class="buffet__card--slider-slide swiper-slide">
+                    <div class="buffet__card--slider-image">
+                        <picture>
+                            <source srcset="img/buffet/slide-8.webp" type="image/webp">
+                            <img src="img/buffet/slide-8.jpg" alt="" width="258" height="255" loading="lazy">
+                        </picture>
+                    </div>
+                </li>
+                <li class="buffet__card--slider-slide swiper-slide">
+                    <div class="buffet__card--slider-image">
+                        <picture>
+                            <source srcset="img/buffet/slide-6.webp" type="image/webp">
+                            <img src="img/buffet/slide-6.jpg" alt="" width="258" height="255" loading="lazy">
+                        </picture>
+                    </div>
+                </li>
+                <li class="buffet__card--slider-slide swiper-slide">
+                    <div class="buffet__card--slider-image">
+                        <picture>
+                            <source srcset="img/buffet/slide-7.webp" type="image/webp">
+                            <img src="img/buffet/slide-7.jpg" alt="" width="258" height="255" loading="lazy">
+                        </picture>
+                    </div>
+                </li>
+                <li class="buffet__card--slider-slide swiper-slide">
+                    <div class="buffet__card--slider-image">
+                        <picture>
+                            <source srcset="img/buffet/slide-1.webp" type="image/webp">
+                            <img src="img/buffet/slide-1.jpg" alt="" width="258" height="255" loading="lazy">
+                        </picture>
+                    </div>
+                </li>
+                <li class="buffet__card--slider-slide swiper-slide">
+                    <div class="buffet__card--slider-image">
+                        <picture>
+                            <source srcset="img/buffet/slide-2.webp" type="image/webp">
+                            <img src="img/buffet/slide-2.jpg" alt="" width="258" height="255" loading="lazy">
+                        </picture>
+                    </div>
+                </li>
+            </ul>
+            <div class="buffet__card--slider-nav">
+                <button class="buffet__card--slider-arrow swiper-button-prev"></button>
+                <button class="buffet__card--slider-arrow swiper-button-next"></button>
+            </div>
+        </div>
+        <h3 class="buffet__card--title">
+            Party Food Delivered
+        </h3>
+        <ul class="buffet__card--list">
+            <li>
+                Name of the dish
+            </li>
+            <li>
+                Name of the dish
+            </li>
+            <li>
+                Name of the dish
+            </li>
+            <li>
+                Name of the dish
+            </li>
+        </ul>
+        <div class="buffet__card--info">
+            <div class="buffet__card--info-elem">
+                <span>
+                    <img src="img/icons/user.svg" width="13" height="13" alt="User icon">
+                </span>
+                <b>
+                    10 people
+                </b>
+            </div>
+            <div class="buffet__card--info-elem">
+                <span>
+                    <img src="img/icons/coins.svg" width="13" height="13" alt="Coins icon">
+                </span>
+                <b>
+                    450£
+                </b>
+            </div>
+        </div>
+        <div class="buffet__card--footer">
+            <div class="buffet__card--radio radio-btn">
+                <label class="radio-btn__label">
+                    <input type="radio" name="delivered" value="1" required class="radio-btn__input">
+                    <span class="radio-btn__element">Choose</span>
+                </label>
+            </div>
+        </div>
+    </div>
+</li>
+                            </ul>
+                        </menu>
+                        <aside class="buffet__basket basket">
+                            <button class="basket__open open-basket-popup btn _bold _center _full" data-id="basket-popup" aria-label="Basket" type="button">
+                                <img src="img/icons/basket.svg" width="22" height="22" alt="">
+                                <span>Basket</span>
+                            </button>
+                            <div class="basket__popup" id="basket-popup">
+                                <button class="basket__close-btn close-basket-popup" title="Close" type="button">
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.586047 11.9998C0.470144 11.9999 0.356837 11.9655 0.26046 11.9011C0.164083 11.8367 0.0889654 11.7452 0.0446082 11.6381C0.000250996 11.5311 -0.0113527 11.4132 0.0112649 11.2996C0.0338824 11.1859 0.0897052 11.0815 0.171672 10.9995L10.9998 0.171396C11.1097 0.0614965 11.2588 -0.000244141 11.4142 -0.000244141C11.5696 -0.000244141 11.7186 0.0614965 11.8285 0.171396C11.9384 0.281295 12.0002 0.43035 12.0002 0.585771C12.0002 0.741191 11.9384 0.890247 11.8285 1.00015L1.00042 11.8283C0.946056 11.8827 0.881462 11.926 0.810351 11.9554C0.739239 11.9848 0.663012 11.9999 0.586047 11.9998Z" fill="#696969"/>
+                                        <path d="M11.4141 11.9998C11.3372 11.9999 11.2609 11.9848 11.1898 11.9554C11.1187 11.926 11.0541 11.8827 10.9998 11.8283L0.17164 1.00015C0.0617407 0.890247 0 0.741191 0 0.585771C0 0.43035 0.0617407 0.281295 0.17164 0.171396C0.281539 0.0614965 0.430594 -0.000244141 0.586015 -0.000244141C0.741436 -0.000244141 0.890491 0.0614965 1.00039 0.171396L11.8285 10.9995C11.9105 11.0815 11.9663 11.1859 11.9889 11.2996C12.0115 11.4132 11.9999 11.5311 11.9556 11.6381C11.9112 11.7452 11.8361 11.8367 11.7397 11.9011C11.6433 11.9655 11.53 11.9999 11.4141 11.9998Z" fill="#696969"/>
+                                    </svg>
+                                </button>
+                                <div class="basket__body">
+                                    <h3 class="basket__title">
+                                        Basket
+                                    </h3>
+                                    <div class="basket__terms">
+                                        <ul>
+                                            <li>Minimum order from 250£</li>
+                                            <li>Order 72 hours in advance</li>
+                                            <li>You can add food for adults from our canapés or buffet selection.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="basket__form _bt">
+                                        <h4 class="basket__min-title _min">
+                                            Enter the number of guests:
+                                        </h4>
+                                        <label class="basket__label">
+                                            <input type="number" required min="0" name="number-guests" placeholder="Number of guests" class="basket__min-input">
+                                            <span class="basket__alt-note _none-border">
+                                                The desired number of canapes for such a number of people is 60 pcs.
+                                            </span>
+                                        </label>
+                                        <div class="basket__footer">
+                                            <div class="basket__total">
+                                                <span>Total:</span>
+                                                <strong>220 £</strong>
+                                            </div>
+                                            <button class="basket__submit btn" type="submit">
+                                                Add to cart
+                                            </button>
+                                            <a href="#" class="basket__back">
+                                                Back to selection
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </aside>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__container container">
+                <a href="#" class="footer__logo">
+                    <img src="img/logo.svg" width="94" height="38" loading="lazy" alt="" class="footer__logo--img">
+                </a>
+                <div class="footer__social">
+                    <ul class="footer__social--list">
+                        <li class="footer__social--item">
+                            <a href="#" class="footer__social--link" title="Instagram">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_151_3548)">
+                                        <path d="M23.9773 7.05607C23.9211 5.78085 23.7149 4.90416 23.4195 4.14449C23.1147 3.33812 22.6459 2.61617 22.0316 2.01602C21.4315 1.40652 20.7048 0.932921 19.9078 0.632936C19.1437 0.337529 18.2716 0.131312 16.9964 0.0750879C15.7116 0.0141019 15.3038 0 12.0453 0C8.78686 0 8.37901 0.0141019 7.09903 0.0703262C5.82382 0.126551 4.94712 0.332951 4.18764 0.628174C3.38108 0.932922 2.65914 1.40176 2.05899 2.01602C1.44949 2.61617 0.976073 3.34288 0.675905 4.13991C0.380498 4.90416 0.174281 5.77609 0.118057 7.0513C0.0570706 8.33604 0.0429688 8.7439 0.0429688 12.0023C0.0429688 15.2608 0.0570706 15.6686 0.113295 16.9486C0.169519 18.2238 0.37592 19.1005 0.671326 19.8602C0.976073 20.6666 1.44949 21.3885 2.05899 21.9887C2.65914 22.5982 3.38585 23.0718 4.18288 23.3718C4.94712 23.6672 5.81906 23.8734 7.09446 23.9296C8.37425 23.986 8.78229 23.9999 12.0407 23.9999C15.2992 23.9999 15.707 23.986 16.987 23.9296C18.2622 23.8734 19.1389 23.6672 19.8984 23.3718C21.5113 22.7482 22.7865 21.4729 23.4101 19.8602C23.7054 19.096 23.9118 18.2238 23.968 16.9486C24.0242 15.6686 24.0383 15.2608 24.0383 12.0023C24.0383 8.7439 24.0336 8.33604 23.9773 7.05607ZM21.8161 16.8549C21.7644 18.027 21.5676 18.6599 21.4035 19.0819C21.0002 20.1274 20.1704 20.9572 19.1248 21.3605C18.7029 21.5246 18.0653 21.7215 16.8978 21.7729C15.632 21.8293 15.2523 21.8433 12.0501 21.8433C8.84785 21.8433 8.46344 21.8293 7.20214 21.7729C6.03004 21.7215 5.3971 21.5246 4.97515 21.3605C4.45484 21.1682 3.98124 20.8634 3.59682 20.4649C3.19831 20.0758 2.89356 19.6069 2.70126 19.0866C2.53717 18.6647 2.34029 18.027 2.28883 16.8596C2.23242 15.5937 2.2185 15.2139 2.2185 12.0117C2.2185 8.80946 2.23242 8.42505 2.28883 7.16394C2.34029 5.99183 2.53717 5.3589 2.70126 4.93694C2.89356 4.41645 3.19831 3.94303 3.60159 3.55843C3.99058 3.15992 4.45942 2.85517 4.97991 2.66306C5.40187 2.49896 6.03956 2.30209 7.2069 2.25044C8.47278 2.19422 8.85261 2.18011 12.0547 2.18011C15.2616 2.18011 15.6413 2.19422 16.9026 2.25044C18.0747 2.30209 18.7076 2.49896 19.1296 2.66306C19.6499 2.85517 20.1235 3.15992 20.5079 3.55843C20.9064 3.94761 21.2112 4.41645 21.4035 4.93694C21.5676 5.3589 21.7644 5.99641 21.8161 7.16394C21.8723 8.42981 21.8864 8.80946 21.8864 12.0117C21.8864 15.2139 21.8723 15.589 21.8161 16.8549Z" fill="#E84974"/>
+                                        <path d="M12.0442 5.8371C8.64049 5.8371 5.87891 8.5985 5.87891 12.0024C5.87891 15.4062 8.64049 18.1676 12.0442 18.1676C15.448 18.1676 18.2094 15.4062 18.2094 12.0024C18.2094 8.5985 15.448 5.8371 12.0442 5.8371ZM12.0442 16.0016C9.83604 16.0016 8.04492 14.2107 8.04492 12.0024C8.04492 9.79405 9.83604 8.00311 12.0442 8.00311C14.2525 8.00311 16.0434 9.79405 16.0434 12.0024C16.0434 14.2107 14.2525 16.0016 12.0442 16.0016Z" fill="#E84974"/>
+                                        <path d="M19.8925 5.5933C19.8925 6.38813 19.248 7.03261 18.453 7.03261C17.6581 7.03261 17.0137 6.38813 17.0137 5.5933C17.0137 4.79828 17.6581 4.15399 18.453 4.15399C19.248 4.15399 19.8925 4.79828 19.8925 5.5933Z" fill="#E84974"/>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_151_3548">
+                                            <rect width="24" height="24" fill="white"/>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer__social--item">
+                            <a href="#" class="footer__social--link" title="Google+">
+                                <svg width="31" height="19" viewBox="0 0 31 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M30.9992 7.9504H27.8992V4.8504H24.7992V7.9504H21.6992V11.0504H24.7992V14.1504H27.8992V11.0504H30.9992V7.9504Z" fill="#E84974"/>
+                                    <path d="M9.3 11.05H15.345C14.725 13.685 12.245 15.7 9.3 15.7C5.89 15.7 3.1 12.91 3.1 9.50001C3.1 6.09001 5.89 3.30001 9.3 3.30001C11.005 3.30001 12.555 3.92001 13.64 5.16001L15.81 2.99001C14.105 1.28501 11.78 0.200012 9.3 0.200012C4.185 0.200012 0 4.38501 0 9.50001C0 14.615 4.185 18.8 9.3 18.8C14.415 18.8 18.6 14.615 18.6 9.50001V7.95001H9.3V11.05Z" fill="#E84974"/>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__copy">
+                    ⓒCopywriting 2022
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.min.js"></script>
+
+</body>
+</html>

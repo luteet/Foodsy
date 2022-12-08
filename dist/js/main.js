@@ -232,6 +232,17 @@ let buffetCardSlider = new Swiper('.buffet__card--slider', {
 
 }); 
 
+let aboutUsSlider = new Swiper('.about-us__slider', {
+  
+  spaceBetween: 20,
+  slidesPerView: 2,
+
+  navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+  },
+});
+
 // =-=-=-=-=-=-=-=-=-=-=-=- </slider> -=-=-=-=-=-=-=-=-=-=-=-=
 
 if(document.querySelector('.date-input')) {
