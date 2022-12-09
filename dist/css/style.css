@@ -1555,6 +1555,7 @@ section {
     color: #cecece;
     -webkit-appearance: none;
     -moz-appearance: none;
+    text-align: left;
     width: 100%;
     position: relative;
     padding: 14.5px 14px
