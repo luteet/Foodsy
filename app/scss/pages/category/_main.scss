@@ -128,10 +128,15 @@
             position: static;
             display: flex;
             
-            flex: 0 0 50px;
+            flex: 0 0 33px;
             margin-top: 0;
             margin-right: 15px;
+            @include _768 {
+                flex: 0 0 40px;
+            }
+            
             @include _992 {
+                flex: 0 0 50px;
                 margin-right: 0;
                 position: absolute;
                 margin-top: calc(0px - var(--swiper-navigation-size)/ 2);
@@ -782,7 +787,10 @@
                     border-radius: 50%;
                     background: #F9EBE5 url("data:image/svg+xml,%3Csvg viewBox='0 0 6 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.86058 0.980681C5.67494 0.794793 5.37349 0.79491 5.1876 0.980681L2.15872 4.00968L0.812514 2.66348C0.626626 2.4776 0.325304 2.4776 0.139416 2.66348C-0.0464721 2.84937 -0.0464721 3.15069 0.139416 3.33658L1.8221 5.01927C1.91499 5.11215 2.03678 5.15871 2.15859 5.15871C2.2804 5.15871 2.40231 5.11227 2.4952 5.01927L5.86058 1.65377C6.04647 1.46801 6.04647 1.16656 5.86058 0.980681Z' fill='%23E4AB93'/%3E%3C/svg%3E%0A")
                     center / 50% no-repeat;
-                    margin-right: 8px; margin-top: 3px;
+                    margin-right: 8px; margin-top: 1px;
+                    @include _768 {
+                        margin-top: 3px;
+                    }
                 }
             }
         }

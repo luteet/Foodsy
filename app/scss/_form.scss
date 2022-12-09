@@ -44,6 +44,8 @@
 
     &._time {
         color: #CECECE;
+        -webkit-appearance: none;
+        -moz-appearance: none;
         &:focus {
             color: #222222;
         }
