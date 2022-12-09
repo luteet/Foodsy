@@ -266,3 +266,18 @@ section {
         font-size: 1.25rem;
     }
 }
+
+.min-slider-arrow {
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(2.5px);
+
+    width: 30px; height: 30px;
+    border-radius: 50%;
+
+    transition: opacity .2s ease-in-out;
+
+    &::after {
+        color: #E84974;
+        font-size: 10px;
+    }
+}

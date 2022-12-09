@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <!-- <link rel="SHORTCUT ICON" href="img/logo.svg" type="image/svg"> -->
+</head>
+<body>
+
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container container">
+                <a href="#" class="header__logo">
+                    <img src="img/logo.svg" alt="Logo" width="94" height="38" class="header__logo--img">
+                </a>
+                <nav class="header__nav">
+                    <div class="header__nav--body">
+                        <ul class="header__nav--list">
+                            <li class="header__nav--item">
+                                <a href="#" class="header__nav--link" aria-label="Delivered | Canapes">
+                                    <div class="header__nav--link-icon">
+                                        <img src="img/header/nav-icon-1.svg" width="20" height="20" alt="">
+                                    </div>
+                                    <span>Delivered | Canapes</span>
+                                </a>
+                            </li>
+                            <li class="header__nav--item">
+                                <a href="#" class="header__nav--link" aria-label="Delivered | Buffet">
+                                    <div class="header__nav--link-icon">
+                                        <img src="img/header/nav-icon-2.svg" width="20" height="20" alt="">
+                                    </div>
+                                    <span>Delivered | Buffet</span>
+                                </a>
+                            </li>
+                            <li class="header__nav--item">
+                                <a href="#" class="header__nav--link" aria-label="Delivered | Dinner Party">
+                                    <div class="header__nav--link-icon">
+                                        <img src="img/header/nav-icon-3.svg" width="20" height="20" alt="">
+                                    </div>
+                                    <span>Delivered | Dinner Party</span>
+                                </a>
+                            </li>
+                            <li class="header__nav--item">
+                                <a href="#" class="header__nav--link" aria-label="Delivered | Kids Party">
+                                    <div class="header__nav--link-icon">
+                                        <img src="img/header/nav-icon-4.svg" width="20" height="20" alt="">
+                                    </div>
+                                    <span>Delivered | Kids Party</span>
+                                </a>
+                            </li>
+                            <li class="header__nav--item">
+                                <a href="#" class="header__nav--link" aria-label="Catering">
+                                    <div class="header__nav--link-icon">
+                                        <img src="img/header/nav-icon-5.svg" width="20" height="20" alt="">
+                                    </div>
+                                    <span>Catering</span>
+                                </a>
+                            </li>
+                            <li class="header__nav--item header__nav--select">
+                                <button class="header__nav--select-target" aria-label="About">
+                                    <div class="header__nav--select-icon">
+                                        <img src="img/header/nav-icon-6.svg" width="20" height="20" alt="">
+                                    </div>
+                                    <span>About</span>
+                                </button>
+                                <div class="header__nav--select-block">
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                Contact us
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Testimonials
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="header__nav--basket header__basket">
+                            <div class="header__basket--text">
+                                Доставка по Лондону
+                            </div>
+                            <a href="#" class="header__basket--btn" title="Basket" data-length="0">
+                                <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M22 7.24999H18.2642L14.3395 0.708679C14.1448 0.383742 13.7225 0.277652 13.3962 0.47303C13.0706 0.668409 12.9652 1.09069 13.1606 1.41632L16.6608 7.24999H5.33928L8.83947 1.41627C9.03485 1.09064 8.92945 0.668362 8.60382 0.472984C8.27685 0.277606 7.85592 0.383696 7.66054 0.708632L3.7358 7.24994H0V8.62495H1.49216L3.23876 17.9418C3.42137 18.9173 4.27402 19.625 5.26638 19.625H16.7337C17.726 19.625 18.5786 18.9173 18.7606 17.9425L20.5078 8.62495H22C22 8.62495 22 7.24999 22 7.24999V7.24999ZM17.409 17.6894C17.3486 18.0143 17.0646 18.25 16.7336 18.25H5.26638C4.93538 18.25 4.6514 18.0144 4.5903 17.6887L2.89068 8.62495H19.1094L17.409 17.6894V17.6894Z" fill="white"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+                <button class="header__burger" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <div class="header__page-address">
+                <div class="header__container container">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <svg width="4" height="6" viewBox="0 0 4 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 5L3 3L1 1" stroke="#6A6565" stroke-linecap="round"/>
+                            </svg>
+                        </li>
+                        <li>
+                            <a>
+                                Delivered Buffet
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+            <section class="testimonials section-padding">
+                <div class="testimonials__container container">
+                    <h2 class="testimonials__section-title section-title _decor-line">
+                        Testimonials
+                    </h2>
+                    <span class="testimonials__sub-text sub-text">Below are just some of the comments from our satisfied customers:</span>
+                    <ul class="testimonials__list">
+                        <li class="testimonials__card">
+    <div class="testimonials__card--body">
+        <div class="testimonials__card--slider swiper">
+            <div class="testimonials__card--slider-wrapper swiper-wrapper">
+                <div class="testimonials__card--slider-slide swiper-slide">
+                    <div class="testimonials__card--slider-image">
+                        <picture>
+                            <source srcset="img/testimonials/image-1.webp" type="image/webp">
+                            <img src="img/testimonials/image-1.jpg" alt="" width="402" height="247" loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+                <div class="testimonials__card--slider-slide swiper-slide">
+                    <div class="testimonials__card--slider-image">
+                        <picture>
+                            <source srcset="img/testimonials/image-2.webp" type="image/webp">
+                            <img src="img/testimonials/image-2.jpg" alt="" width="402" height="247" loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+                <div class="testimonials__card--slider-slide swiper-slide">
+                    <div class="testimonials__card--slider-image">
+                        <picture>
+                            <source srcset="img/testimonials/image-3.webp" type="image/webp">
+                            <img src="img/testimonials/image-3.jpg" alt="" width="402" height="247" loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonials__card--slider-nav">
+                <button class="testimonials__card--slider-arrow min-slider-arrow swiper-button-prev"></button>
+                <button class="testimonials__card--slider-arrow min-slider-arrow swiper-button-next"></button>
+            </div>
+        </div>
+        <div class="testimonials__card--info">
+            <span>Alisa M</span>
+            <time datetime="2022-06-19">
+                19.06.2022
+            </time>
+        </div>
+        <h3 class="testimonials__card--title">
+            Sit-Down 3 Course Dinner + Canapes, 80 people, Hampshire 
+        </h3>
+        <div class="testimonials__card--text">
+            Dear Yulia <br> How to thank you for a tremendous dinner (plus all the rest!). Everything was completely delicious just as I had hoped and better! One of our friends in the rather smart part of the hotel industry said your canapés were the best he had tasted (I agree). Your staff also fantastic, friendly and just got on and did whatever needed doing to make everything happen (even stuff I had failed to remember or plan etc.)...and it wasn't easy serving with the tables tight up together (sorry) as they were but they just got on with it all with smiles.  So a huge thank you. I am full of admiration for what you do as I really don't know how you do that many people and still make everything taste so delicious. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, laboriosam beatae. Nisi hic impedit, sint libero aliquid enim amet unde. 
+        </div>
+        <a href="#" class="testimonials__card--read-more">Read full review</a>
+    </div>
+</li><li class="testimonials__card">
+    <div class="testimonials__card--body">
+        <div class="testimonials__card--slider swiper">
+            <div class="testimonials__card--slider-wrapper swiper-wrapper">
+                <div class="testimonials__card--slider-slide swiper-slide">
+                    <div class="testimonials__card--slider-image">
+                        <picture>
+                            <source srcset="img/testimonials/image-2.webp" type="image/webp">
+                            <img src="img/testimonials/image-2.jpg" alt="" width="402" height="247" loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+                <div class="testimonials__card--slider-slide swiper-slide">
+                    <div class="testimonials__card--slider-image">
+                        <picture>
+                            <source srcset="img/testimonials/image-3.webp" type="image/webp">
+                            <img src="img/testimonials/image-3.jpg" alt="" width="402" height="247" loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+                <div class="testimonials__card--slider-slide swiper-slide">
+                    <div class="testimonials__card--slider-image">
+                        <picture>
+                            <source srcset="img/testimonials/image-4.webp" type="image/webp">
+                            <img src="img/testimonials/image-4.jpg" alt="" width="402" height="247" loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonials__card--slider-nav">
+                <button class="testimonials__card--slider-arrow min-slider-arrow swiper-button-prev"></button>
+                <button class="testimonials__card--slider-arrow min-slider-arrow swiper-button-next"></button>
+            </div>
+        </div>
+        <div class="testimonials__card--info">
+            <span>Alisa M</span>
+            <time datetime="2022-06-19">
+                19.06.2022
+            </time>
+        </div>
+        <h3 class="testimonials__card--title">
+            Canapes Catering, 50 guests, SW6
+        </h3>
+        <div class="testimonials__card--text">
+            I can recommend Yulia of Foodsy without hesitation. She and her team are extremely professional—punctual, pleasant, tidy, efficient, responsive, and the list goes on. They are everything you want for a catering job. But the best part of the company is the food. I’ve used Yulia for several events over the last five years and her food and presentation get better and better every time I use them. I will continue to use them for future events and recommend them to friends and colleagues who want a hassle-free, delicious event. In fact, my very good friend is using them for a milestone party which is her 40th and her husband’s 60th—so a century party of sorts. She insisted on using Yulia after she tasted the food at one of our events.
+        </div>
+        
+    </div>
+</li><li class="testimonials__card">
+    <div class="testimonials__card--body">
+        <div class="testimonials__card--slider swiper">
+            <div class="testimonials__card--slider-wrapper swiper-wrapper">
+                <div class="testimonials__card--slider-slide swiper-slide">
+                    <div class="testimonials__card--slider-image">
+                        <picture>
+                            <source srcset="img/testimonials/image-3.webp" type="image/webp">
+                            <img src="img/testimonials/image-3.jpg" alt="" width="402" height="247" loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+                <div class="testimonials__card--slider-slide swiper-slide">
+                    <div class="testimonials__card--slider-image">
+                        <picture>
+                            <source srcset="img/testimonials/image-4.webp" type="image/webp">
+                            <img src="img/testimonials/image-4.jpg" alt="" width="402" height="247" loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+                <div class="testimonials__card--slider-slide swiper-slide">
+                    <div class="testimonials__card--slider-image">
+                        <picture>
+                            <source srcset="img/testimonials/image-5.webp" type="image/webp">
+                            <img src="img/testimonials/image-5.jpg" alt="" width="402" height="247" loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonials__card--slider-nav">
+                <button class="testimonials__card--slider-arrow min-slider-arrow swiper-button-prev"></button>
+                <button class="testimonials__card--slider-arrow min-slider-arrow swiper-button-next"></button>
+            </div>
+        </div>
+        <div class="testimonials__card--info">
+            <span>Alisa M</span>
+            <time datetime="2022-06-19">
+                19.06.2022
+            </time>
+        </div>
+        <h3 class="testimonials__card--title">
+            Kids Party Food + Adult Cold Fork Buffet, 50 guests, W4
+        </h3>
+        <div class="testimonials__card--text">
+            Thank you again for the fantastic food and service today - everyone thought the food was simply delicious! You and your team did a brilliant job as I've now come to expect!
+        </div>
+        
+    </div>
+</li><li class="testimonials__card">
+    <div class="testimonials__card--body">
+        <div class="testimonials__card--slider swiper">
+            <div class="testimonials__card--slider-wrapper swiper-wrapper">
+                <div class="testimonials__card--slider-slide swiper-slide">
+                    <div class="testimonials__card--slider-image">
+                        <picture>
+                            <source srcset="img/testimonials/image-4.webp" type="image/webp">
+                            <img src="img/testimonials/image-4.jpg" alt="" width="402" height="247" loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+                <div class="testimonials__card--slider-slide swiper-slide">
+                    <div class="testimonials__card--slider-image">
+                        <picture>
+                            <source srcset="img/testimonials/image-5.webp" type="image/webp">
+                            <img src="img/testimonials/image-5.jpg" alt="" width="402" height="247" loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+                <div class="testimonials__card--slider-slide swiper-slide">
+                    <div class="testimonials__card--slider-image">
+                        <picture>
+                            <source srcset="img/testimonials/image-6.webp" type="image/webp">
+                            <img src="img/testimonials/image-6.jpg" alt="" width="402" height="247" loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonials__card--slider-nav">
+                <button class="testimonials__card--slider-arrow min-slider-arrow swiper-button-prev"></button>
+                <button class="testimonials__card--slider-arrow min-slider-arrow swiper-button-next"></button>
+            </div>
+        </div>
+        <div class="testimonials__card--info">
+            <span>Alisa M</span>
+            <time datetime="2022-06-19">
+                19.06.2022
+            </time>
+        </div>
+        <h3 class="testimonials__card--title">
+            Christening canapes catering, 40 guests, W4
+        </h3>
+        <div class="testimonials__card--text">
+            Thanks so much for Sunday – you certainly lived up to our expectations. The food was great & everyone commented on how tasty & filling it was. Your two staff were also brilliant & left everywhere spotless. I also had lots of comments on how attentive they were. All the best & I am sure you’ll be getting some more business coming your way, as everyone was so impressed.
+        </div>
+        
+    </div>
+</li><li class="testimonials__card">
+    <div class="testimonials__card--body">
+        <div class="testimonials__card--slider swiper">
+            <div class="testimonials__card--slider-wrapper swiper-wrapper">
+                <div class="testimonials__card--slider-slide swiper-slide">
+                    <div class="testimonials__card--slider-image">
+                        <picture>
+                            <source srcset="img/testimonials/image-5.webp" type="image/webp">
+                            <img src="img/testimonials/image-5.jpg" alt="" width="402" height="247" loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+                <div class="testimonials__card--slider-slide swiper-slide">
+                    <div class="testimonials__card--slider-image">
+                        <picture>
+                            <source srcset="img/testimonials/image-6.webp" type="image/webp">
+                            <img src="img/testimonials/image-6.jpg" alt="" width="402" height="247" loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+                <div class="testimonials__card--slider-slide swiper-slide">
+                    <div class="testimonials__card--slider-image">
+                        <picture>
+                            <source srcset="img/testimonials/image-1.webp" type="image/webp">
+                            <img src="img/testimonials/image-1.jpg" alt="" width="402" height="247" loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonials__card--slider-nav">
+                <button class="testimonials__card--slider-arrow min-slider-arrow swiper-button-prev"></button>
+                <button class="testimonials__card--slider-arrow min-slider-arrow swiper-button-next"></button>
+            </div>
+        </div>
+        <div class="testimonials__card--info">
+            <span>Alisa M</span>
+            <time datetime="2022-06-19">
+                19.06.2022
+            </time>
+        </div>
+        <h3 class="testimonials__card--title">
+            Private Party Catering, Canapes, 50 guests, W14
+        </h3>
+        <div class="testimonials__card--text">
+            The party was made so memorable by the wonderful canapes you produced – everybody was full of praise for you and your team which made for a perfect evening,especially as the weather was kind to us. I understand you will be catering for Mr. & Mrs. Drizen in November so see you there ! Again many thanks – wonderful food, professionally and beautifully presented and served.
+        </div>
+        
+    </div>
+</li><li class="testimonials__card">
+    <div class="testimonials__card--body">
+        <div class="testimonials__card--slider swiper">
+            <div class="testimonials__card--slider-wrapper swiper-wrapper">
+                <div class="testimonials__card--slider-slide swiper-slide">
+                    <div class="testimonials__card--slider-image">
+                        <picture>
+                            <source srcset="img/testimonials/image-6.webp" type="image/webp">
+                            <img src="img/testimonials/image-6.jpg" alt="" width="402" height="247" loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+                <div class="testimonials__card--slider-slide swiper-slide">
+                    <div class="testimonials__card--slider-image">
+                        <picture>
+                            <source srcset="img/testimonials/image-1.webp" type="image/webp">
+                            <img src="img/testimonials/image-1.jpg" alt="" width="402" height="247" loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+                <div class="testimonials__card--slider-slide swiper-slide">
+                    <div class="testimonials__card--slider-image">
+                        <picture>
+                            <source srcset="img/testimonials/image-2.webp" type="image/webp">
+                            <img src="img/testimonials/image-2.jpg" alt="" width="402" height="247" loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonials__card--slider-nav">
+                <button class="testimonials__card--slider-arrow min-slider-arrow swiper-button-prev"></button>
+                <button class="testimonials__card--slider-arrow min-slider-arrow swiper-button-next"></button>
+            </div>
+        </div>
+        <div class="testimonials__card--info">
+            <span>Alisa M</span>
+            <time datetime="2022-06-19">
+                19.06.2022
+            </time>
+        </div>
+        <h3 class="testimonials__card--title">
+            Private Party Catering, Canapes & Bowl Food, 65 guests, W6
+        </h3>
+        <div class="testimonials__card--text">
+            Foodsy catered for 65 for my fortieth birthday in early May 2010. Not only was the food outstanding and beautifully presented but the majority of our friends commented on how good it was! We would definitely use Foodsy again and would have no hesitation in recommending Yulia. Her staff were friendly and helpful with excellent service.  They even left the kitchen in a better state than when they arrived.
+        </div>
+        
+    </div>
+</li><li class="testimonials__card">
+    <div class="testimonials__card--body">
+        <div class="testimonials__card--slider swiper">
+            <div class="testimonials__card--slider-wrapper swiper-wrapper">
+                <div class="testimonials__card--slider-slide swiper-slide">
+                    <div class="testimonials__card--slider-image">
+                        <picture>
+                            <source srcset="img/testimonials/image-1.webp" type="image/webp">
+                            <img src="img/testimonials/image-1.jpg" alt="" width="402" height="247" loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+                <div class="testimonials__card--slider-slide swiper-slide">
+                    <div class="testimonials__card--slider-image">
+                        <picture>
+                            <source srcset="img/testimonials/image-2.webp" type="image/webp">
+                            <img src="img/testimonials/image-2.jpg" alt="" width="402" height="247" loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+                <div class="testimonials__card--slider-slide swiper-slide">
+                    <div class="testimonials__card--slider-image">
+                        <picture>
+                            <source srcset="img/testimonials/image-3.webp" type="image/webp">
+                            <img src="img/testimonials/image-3.jpg" alt="" width="402" height="247" loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonials__card--slider-nav">
+                <button class="testimonials__card--slider-arrow min-slider-arrow swiper-button-prev"></button>
+                <button class="testimonials__card--slider-arrow min-slider-arrow swiper-button-next"></button>
+            </div>
+        </div>
+        <div class="testimonials__card--info">
+            <span>Alisa M</span>
+            <time datetime="2022-06-19">
+                19.06.2022
+            </time>
+        </div>
+        <h3 class="testimonials__card--title">
+            Sit-Down 3 Course Dinner + Canapes, 80 people, Hampshire 
+        </h3>
+        <div class="testimonials__card--text">
+            Dear Yulia <br>How to thank you for a tremendous dinner (plus all the rest!). Everything was completely delicious just as I had hoped and better! One of our friends in the rather smart part of the hotel industry said your canapés were the best he had tasted (I agree). Your staff also fantastic, friendly and just got on and did whatever needed doing to make everything happen (even stuff I had failed to remember or plan etc.)...and it wasn't easy serving with the tables tight up together (sorry) as they were but they just got on with it all with smiles.  So a huge thank you. I am full of admiration for what you do as I really don't know how you do that many people and still make everything taste so delicious.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, laboriosam beatae. Nisi hic impedit, sint libero aliquid enim amet unde.
+        </div>
+        <a href="#" class="testimonials__card--read-more">Read full review</a>
+    </div>
+</li><li class="testimonials__card">
+    <div class="testimonials__card--body">
+        <div class="testimonials__card--slider swiper">
+            <div class="testimonials__card--slider-wrapper swiper-wrapper">
+                <div class="testimonials__card--slider-slide swiper-slide">
+                    <div class="testimonials__card--slider-image">
+                        <picture>
+                            <source srcset="img/testimonials/image-2.webp" type="image/webp">
+                            <img src="img/testimonials/image-2.jpg" alt="" width="402" height="247" loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+                <div class="testimonials__card--slider-slide swiper-slide">
+                    <div class="testimonials__card--slider-image">
+                        <picture>
+                            <source srcset="img/testimonials/image-3.webp" type="image/webp">
+                            <img src="img/testimonials/image-3.jpg" alt="" width="402" height="247" loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+                <div class="testimonials__card--slider-slide swiper-slide">
+                    <div class="testimonials__card--slider-image">
+                        <picture>
+                            <source srcset="img/testimonials/image-4.webp" type="image/webp">
+                            <img src="img/testimonials/image-4.jpg" alt="" width="402" height="247" loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonials__card--slider-nav">
+                <button class="testimonials__card--slider-arrow min-slider-arrow swiper-button-prev"></button>
+                <button class="testimonials__card--slider-arrow min-slider-arrow swiper-button-next"></button>
+            </div>
+        </div>
+        <div class="testimonials__card--info">
+            <span>Alisa M</span>
+            <time datetime="2022-06-19">
+                19.06.2022
+            </time>
+        </div>
+        <h3 class="testimonials__card--title">
+            Canapes Catering, 50 guests, SW6
+        </h3>
+        <div class="testimonials__card--text">
+            I can recommend Yulia of Foodsy without hesitation. She and her team are extremely professional—punctual, pleasant, tidy, efficient, responsive, and the list goes on. They are everything you want for a catering job. But the best part of the company is the food. I’ve used Yulia for several events over the last five years and her food and presentation get better and better every time I use them. I will continue to use them for future events and recommend them to friends and colleagues who want a hassle-free, delicious event. In fact, my very good friend is using them for a milestone party which is her 40th and her husband’s 60th—so a century party of sorts. She insisted on using Yulia after she tasted the food at one of our events.
+        </div>
+        
+    </div>
+</li><li class="testimonials__card">
+    <div class="testimonials__card--body">
+        <div class="testimonials__card--slider swiper">
+            <div class="testimonials__card--slider-wrapper swiper-wrapper">
+                <div class="testimonials__card--slider-slide swiper-slide">
+                    <div class="testimonials__card--slider-image">
+                        <picture>
+                            <source srcset="img/testimonials/image-3.webp" type="image/webp">
+                            <img src="img/testimonials/image-3.jpg" alt="" width="402" height="247" loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+                <div class="testimonials__card--slider-slide swiper-slide">
+                    <div class="testimonials__card--slider-image">
+                        <picture>
+                            <source srcset="img/testimonials/image-4.webp" type="image/webp">
+                            <img src="img/testimonials/image-4.jpg" alt="" width="402" height="247" loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+                <div class="testimonials__card--slider-slide swiper-slide">
+                    <div class="testimonials__card--slider-image">
+                        <picture>
+                            <source srcset="img/testimonials/image-5.webp" type="image/webp">
+                            <img src="img/testimonials/image-5.jpg" alt="" width="402" height="247" loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonials__card--slider-nav">
+                <button class="testimonials__card--slider-arrow min-slider-arrow swiper-button-prev"></button>
+                <button class="testimonials__card--slider-arrow min-slider-arrow swiper-button-next"></button>
+            </div>
+        </div>
+        <div class="testimonials__card--info">
+            <span>Alisa M</span>
+            <time datetime="2022-06-19">
+                19.06.2022
+            </time>
+        </div>
+        <h3 class="testimonials__card--title">
+            Kids Party Food + Adult Cold Fork Buffet, 50 guests, W4
+        </h3>
+        <div class="testimonials__card--text">
+            Thank you again for the fantastic food and service today - everyone thought the food was simply delicious! You and your team did a brilliant job as I've now come to expect!
+        </div>
+        
+    </div>
+</li>
+                    </ul>
+                    <div class="testimonials__footer">
+                        <div class="testimonials__pagination">
+                            <a href="#" class="testimonials__pagination--arrow _prev">
+                                <svg width="9" height="13" viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.796665 6.50004C0.796665 6.73302 0.885625 6.96598 1.06317 7.14361L6.65293 12.7333C7.00851 13.0889 7.58502 13.0889 7.94046 12.7333C8.29589 12.3779 8.29589 11.8015 7.94046 11.4459L2.99432 6.50004L7.94028 1.55416C8.29572 1.19858 8.29572 0.622248 7.94028 0.266843C7.58485 -0.0889082 7.00834 -0.0889082 6.65276 0.266843L1.063 5.85646C0.885423 6.03418 0.796665 6.26714 0.796665 6.50004Z" fill="white"/>
+                                </svg>
+                            </a>
+                            <ul class="testimonials__pagination--list">
+                                <li>
+                                    <a href="#" class="current">
+                                        1
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        2
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        3
+                                    </a>
+                                </li>
+                                <li>
+                                    ...
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        10
+                                    </a>
+                                </li>
+                            </ul>
+                            <a href="#" class="testimonials__pagination--arrow _next">
+                                <svg width="9" height="13" viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.20334 6.50004C8.20334 6.73302 8.11438 6.96598 7.93683 7.14361L2.34707 12.7333C1.99149 13.0889 1.41498 13.0889 1.05954 12.7333C0.70411 12.3779 0.70411 11.8015 1.05954 11.4459L6.00568 6.50004L1.05972 1.55416C0.704282 1.19858 0.704282 0.622248 1.05972 0.266843C1.41515 -0.0889082 1.99166 -0.0889082 2.34724 0.266843L7.937 5.85646C8.11458 6.03418 8.20333 6.26714 8.20334 6.50004Z" fill="white"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__container container">
+                <a href="#" class="footer__logo">
+                    <img src="img/logo.svg" width="94" height="38" loading="lazy" alt="" class="footer__logo--img">
+                </a>
+                <div class="footer__social">
+                    <ul class="footer__social--list">
+                        <li class="footer__social--item">
+                            <a href="#" class="footer__social--link" title="Instagram">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_151_3548)">
+                                        <path d="M23.9773 7.05607C23.9211 5.78085 23.7149 4.90416 23.4195 4.14449C23.1147 3.33812 22.6459 2.61617 22.0316 2.01602C21.4315 1.40652 20.7048 0.932921 19.9078 0.632936C19.1437 0.337529 18.2716 0.131312 16.9964 0.0750879C15.7116 0.0141019 15.3038 0 12.0453 0C8.78686 0 8.37901 0.0141019 7.09903 0.0703262C5.82382 0.126551 4.94712 0.332951 4.18764 0.628174C3.38108 0.932922 2.65914 1.40176 2.05899 2.01602C1.44949 2.61617 0.976073 3.34288 0.675905 4.13991C0.380498 4.90416 0.174281 5.77609 0.118057 7.0513C0.0570706 8.33604 0.0429688 8.7439 0.0429688 12.0023C0.0429688 15.2608 0.0570706 15.6686 0.113295 16.9486C0.169519 18.2238 0.37592 19.1005 0.671326 19.8602C0.976073 20.6666 1.44949 21.3885 2.05899 21.9887C2.65914 22.5982 3.38585 23.0718 4.18288 23.3718C4.94712 23.6672 5.81906 23.8734 7.09446 23.9296C8.37425 23.986 8.78229 23.9999 12.0407 23.9999C15.2992 23.9999 15.707 23.986 16.987 23.9296C18.2622 23.8734 19.1389 23.6672 19.8984 23.3718C21.5113 22.7482 22.7865 21.4729 23.4101 19.8602C23.7054 19.096 23.9118 18.2238 23.968 16.9486C24.0242 15.6686 24.0383 15.2608 24.0383 12.0023C24.0383 8.7439 24.0336 8.33604 23.9773 7.05607ZM21.8161 16.8549C21.7644 18.027 21.5676 18.6599 21.4035 19.0819C21.0002 20.1274 20.1704 20.9572 19.1248 21.3605C18.7029 21.5246 18.0653 21.7215 16.8978 21.7729C15.632 21.8293 15.2523 21.8433 12.0501 21.8433C8.84785 21.8433 8.46344 21.8293 7.20214 21.7729C6.03004 21.7215 5.3971 21.5246 4.97515 21.3605C4.45484 21.1682 3.98124 20.8634 3.59682 20.4649C3.19831 20.0758 2.89356 19.6069 2.70126 19.0866C2.53717 18.6647 2.34029 18.027 2.28883 16.8596C2.23242 15.5937 2.2185 15.2139 2.2185 12.0117C2.2185 8.80946 2.23242 8.42505 2.28883 7.16394C2.34029 5.99183 2.53717 5.3589 2.70126 4.93694C2.89356 4.41645 3.19831 3.94303 3.60159 3.55843C3.99058 3.15992 4.45942 2.85517 4.97991 2.66306C5.40187 2.49896 6.03956 2.30209 7.2069 2.25044C8.47278 2.19422 8.85261 2.18011 12.0547 2.18011C15.2616 2.18011 15.6413 2.19422 16.9026 2.25044C18.0747 2.30209 18.7076 2.49896 19.1296 2.66306C19.6499 2.85517 20.1235 3.15992 20.5079 3.55843C20.9064 3.94761 21.2112 4.41645 21.4035 4.93694C21.5676 5.3589 21.7644 5.99641 21.8161 7.16394C21.8723 8.42981 21.8864 8.80946 21.8864 12.0117C21.8864 15.2139 21.8723 15.589 21.8161 16.8549Z" fill="#E84974"/>
+                                        <path d="M12.0442 5.8371C8.64049 5.8371 5.87891 8.5985 5.87891 12.0024C5.87891 15.4062 8.64049 18.1676 12.0442 18.1676C15.448 18.1676 18.2094 15.4062 18.2094 12.0024C18.2094 8.5985 15.448 5.8371 12.0442 5.8371ZM12.0442 16.0016C9.83604 16.0016 8.04492 14.2107 8.04492 12.0024C8.04492 9.79405 9.83604 8.00311 12.0442 8.00311C14.2525 8.00311 16.0434 9.79405 16.0434 12.0024C16.0434 14.2107 14.2525 16.0016 12.0442 16.0016Z" fill="#E84974"/>
+                                        <path d="M19.8925 5.5933C19.8925 6.38813 19.248 7.03261 18.453 7.03261C17.6581 7.03261 17.0137 6.38813 17.0137 5.5933C17.0137 4.79828 17.6581 4.15399 18.453 4.15399C19.248 4.15399 19.8925 4.79828 19.8925 5.5933Z" fill="#E84974"/>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_151_3548">
+                                            <rect width="24" height="24" fill="white"/>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer__social--item">
+                            <a href="#" class="footer__social--link" title="Google+">
+                                <svg width="31" height="19" viewBox="0 0 31 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M30.9992 7.9504H27.8992V4.8504H24.7992V7.9504H21.6992V11.0504H24.7992V14.1504H27.8992V11.0504H30.9992V7.9504Z" fill="#E84974"/>
+                                    <path d="M9.3 11.05H15.345C14.725 13.685 12.245 15.7 9.3 15.7C5.89 15.7 3.1 12.91 3.1 9.50001C3.1 6.09001 5.89 3.30001 9.3 3.30001C11.005 3.30001 12.555 3.92001 13.64 5.16001L15.81 2.99001C14.105 1.28501 11.78 0.200012 9.3 0.200012C4.185 0.200012 0 4.38501 0 9.50001C0 14.615 4.185 18.8 9.3 18.8C14.415 18.8 18.6 14.615 18.6 9.50001V7.95001H9.3V11.05Z" fill="#E84974"/>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__copy">
+                    ⓒCopywriting 2022
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.min.js"></script>
+
+</body>
+</html>

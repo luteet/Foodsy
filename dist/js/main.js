@@ -114,6 +114,19 @@ body.addEventListener('click', function (event) {
 
   // =-=-=-=-=-=-=-=-=-=- </remove item from order list> -=-=-=-=-=-=-=-=-=-=-
 
+
+
+  // =-=-=-=-=-=-=-=-=-=- <read full review> -=-=-=-=-=-=-=-=-=-=-
+
+  const testimonialsCardReadMore = $('.testimonials__card--read-more');
+  if(testimonialsCardReadMore) {
+    event.preventDefault();
+    const card = testimonialsCardReadMore.closest('.testimonials__card');
+    card.classList.add('_full');
+  }
+
+  // =-=-=-=-=-=-=-=-=-=- </read full review> -=-=-=-=-=-=-=-=-=-=-
+
 })
 
 
@@ -210,7 +223,7 @@ let categorySlider = new Swiper('.category__slider', {
     }
 });
 
-let buffetCardSlider = new Swiper('.buffet__card--slider', {
+let buffetCardSlider = new Swiper('.buffet__card--slider, .testimonials__card--slider', {
   
   spaceBetween: 15,
   slidesPerView: 1,
