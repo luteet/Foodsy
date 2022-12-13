@@ -78,8 +78,10 @@ body.addEventListener('click', function (event) {
     const parent = dishMinus.parentElement,
           input = parent.querySelector('.dish-length');
     
-    if(input.value > 10) {
-      input.value = Number(input.value) - 1;
+    if(input.value >= 20) {
+      input.value = Number(input.value) - 10;
+    } else {
+      input.value = 10;
     }
   }
  
@@ -88,7 +90,7 @@ body.addEventListener('click', function (event) {
     const parent = dishPlus.parentElement,
           input = parent.querySelector('.dish-length');
     
-    input.value = Number(input.value) + 1;
+    input.value = Number(input.value) + 10;
     
 
   }

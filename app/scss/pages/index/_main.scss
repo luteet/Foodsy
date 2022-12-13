@@ -35,7 +35,7 @@
             
             @include _992 {
                 width: 67%;
-                transform: translate(20%,-10%);
+                transform: translate(20%,-18%);
                 background: rgba(255, 255, 255, 0.2);
             }
         }
@@ -88,7 +88,7 @@
 
         &--col {
             &:nth-child(1) {
-                flex: 0 1 35%;
+                flex: 0 1 40%;
             }
             &:nth-child(2) {
                 flex: 1 1 auto;
@@ -104,6 +104,7 @@
             }
 
             position: relative;
+            z-index: 3;
             &::before {
                 content: '';
                 position: absolute;
@@ -143,9 +144,10 @@
             
             @include _992 {
                 position: absolute;
-                left: -50px; top: 50px;
+                left: -75px; top: 50px;
                 width: 73.5vw;
             }
+
             @media (min-width: 1500px) {
                 width: 63.5vw;
             }
@@ -176,18 +178,18 @@
             }
             
             &:nth-child(1) {
-                flex: 0 1 36%; width: 36%;
-                margin: -5% 10% -13% 0px;
+                flex: 0 1 40%; width: 40%;
+                margin: -2% 2% -13% 0;
 
                 @include _768 {
-                    flex: 0 1 21.7%; width: 21.7%;
+                    flex: 0 1 23%; width: 23%;
                     margin: 20px;
                 }
             }
             
             &:nth-child(2) {
                 flex: 0 1 50%; width: 50%;
-                margin: 5% 0% 5% 5%;
+                margin: 5% 4% 5% 5%;
                 @include _768 {
                     margin: 20px;
                     flex: 0 1 34%; width: 34%;
@@ -198,7 +200,7 @@
                 flex: 0 1 32%; width: 32%;
                 margin: 10% 5% 10% 2.5%;
                 @include _768 {
-                    flex: 0 1 21.7%; width: 21.7%;
+                    flex: 0 1 23%; width: 23%;
                     margin: 20px;
                 }
             }
@@ -208,7 +210,7 @@
                 margin: -5% 5% 5% 5%;
 
                 @include _768 {
-                    flex: 0 1 21.7%; width: 21.7%;
+                    flex: 0 1 23%; width: 23%;
                     margin: 20px;
                 }
             }
@@ -218,7 +220,7 @@
                 transform: translate(-15%,-25%);
                 //margin: 0% 5% 5% 5%;
                 @include _768 {
-                    flex: 0 1 21.7%; width: 21.7%;
+                    flex: 0 1 23%; width: 23%;
                     transform: translate(0,0);
                     margin: 20px;
                 }
@@ -268,6 +270,9 @@
     // .index__block
 
     &__block {
+        @include _992 {
+            padding-top: 75px;
+        }
     }
 
     // .index__list
@@ -338,12 +343,12 @@
         // .index__card--img
 
         &--img {
-            width: 150%; height: 195%;
+            width: 115%; height: 95%;
             object-fit: cover;
             position: absolute;
             left: 50%; top: 0%;
-            transform: translate(-50%,-50%);
-            border-radius: 50%;
+            transform: translate(-50%,0%);
+            border-radius: 0 0 50% 50%;
         }
 
         // .index__card--info

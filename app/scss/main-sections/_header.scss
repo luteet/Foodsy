@@ -29,12 +29,13 @@
     }
 
     &__logo {
-        max-width: 150px;
+        max-width: 91px;
 
         position: relative;
         z-index: 2;
         &--img {
             width: 100%;
+            object-fit: contain;
         }
     }
 
@@ -85,7 +86,7 @@
         }
 
         @media (min-width: 1150px) {
-            padding-left: 40px;
+            padding-left: 21px;
         }
 
         &--body {
@@ -344,8 +345,26 @@
         &--text {
             font-size: 0.875rem;
             display: none;
+            padding: 7px 18px 7px 14px;
+
+            border: 1px solid #A46850;
+            border-radius: 25px;
+
+            font-weight: 500;
+            line-height: 200%;
+            text-align: center;
+
+            color: #333333;
+
+
             @media (min-width: #{$container}px) {
-                display: block;
+                display: flex;
+                align-items: center;
+
+                & img {
+                    margin-right: 2px;
+                    flex: 0 0 18px;
+                }
             }
         }
 
