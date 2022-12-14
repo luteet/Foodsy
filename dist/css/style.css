@@ -1700,7 +1700,7 @@ section {
 }
 
 .header__logo {
-    max-width: 91px;
+    max-width: 101px;
     position: relative;
     z-index: 2
 }
@@ -5507,7 +5507,7 @@ section {
     }
 
     .header__nav {
-        padding-left: 21px
+        padding-left: 11px
     }
 
     .header__basket--btn {
