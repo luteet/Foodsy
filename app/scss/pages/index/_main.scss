@@ -9,6 +9,8 @@
         padding-bottom: 123px;
     }
 
+    flex: 1 1 auto;
+
     // .index__bg
 
     &__bg {
@@ -150,6 +152,10 @@
 
             @media (min-width: 1500px) {
                 width: 63.5vw;
+            }
+
+            @media (min-width: 2000px) {
+                width: 1260px;
             }
 
             display: flex;
